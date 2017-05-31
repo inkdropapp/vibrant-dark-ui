@@ -1,0 +1,21 @@
+{
+  "base": "./",
+  "paths": {
+    "source": {
+      "config": "src/theme.config",
+      "definitions": "src/definitions/",
+      "site": "src/site/",
+      "themes": "src/themes/"
+    },
+    "output": {
+      "packaged": "styles/",
+      "uncompressed": "build/components/",
+      "compressed": "build/components/",
+      "themes": "build/themes/"
+    },
+    "clean": ["build/", "styles/"]
+  },
+  "permission": false,
+  "rtl": false,
+  "version": "2.2.2"
+}
