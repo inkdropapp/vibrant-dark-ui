@@ -1,4 +1,4 @@
-# Default Light UI Theme for Inkdrop
+# Vibrant Dark UI Theme for Inkdrop
 
 ## How to build
 
