@@ -1493,7 +1493,7 @@ input::selection {
   --note-list-view-item-active-color: rgba(255, 255, 255, 0.7);
   --note-list-view-item-active-date-color: rgba(255, 255, 255, 0.7);
   --note-list-view-item-active-tag-color: rgba(255, 255, 255, 0.7);
-  --note-list-view-item-focus-inner-shadow: inset 0 0 4px rgba(0, 0, 0, 0.8);
+  --note-list-view-item-focus-inner-shadow: inset 0 0 4px rgba(255, 255, 255, 0.4);
   --note-search-bar-background: rgba(255, 255, 255, 0.05);
   --note-search-bar-border-bottom: 1px solid #2E3235;
   /*-------------------
