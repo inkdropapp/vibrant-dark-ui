@@ -1,6 +1,6 @@
 # Vibrant Dark UI Theme for Inkdrop
 
-![screenshot](https://github.com/inkdropapp/vibrant-dark-ui/blob/master/img/screenshot.png)
+![screenshot](https://github.com/inkdropapp/vibrant-dark-ui/blob/master/img/screenshot.png?raw=true)
 
  * Note: It works on macOS only.
 
