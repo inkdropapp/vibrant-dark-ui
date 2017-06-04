@@ -11,6 +11,7 @@
   "scripts": {
     "run": "gulp"
   },
+  "repository": "https://github.com/inkdropapp/vibrant-dark-ui",
   "license": "MIT",
   "devDependencies": {
     "better-console": "*",
