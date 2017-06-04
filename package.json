@@ -1,9 +1,11 @@
 {
   "name": "vibrant-dark-ui",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "theme": "ui",
   "main": "./lib/index",
-  "styleSheets": ["theme.css"],
+  "styleSheets": [
+    "theme.css"
+  ],
   "description": "A dark UI with vibrant appearance theme",
   "engines": {
     "inkdrop": "^3.5.0"
