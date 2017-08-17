@@ -944,9 +944,9 @@ input::selection {
   --negative-header-color: #912D2B;
   --negative-text-color: #9F3A38;
   /* Info */
-  --info-color: #31CCEC;
-  --info-background-color: #F8FFFF;
-  --info-border-color: #A9D5DE;
+  --info-color: #31ccec;
+  --info-background-color: rgba(49, 204, 236, 0.2);
+  --info-border-color: #31ccec;
   --info-header-color: #0E566C;
   --info-text-color: #276F86;
   /* Warning */
@@ -2321,7 +2321,7 @@ input::selection {
   border-radius: 0.28571429rem;
   text-transform: none;
   text-shadow: none !important;
-  box-shadow: 0px 0px 0px 1px rgba(24, 26, 28, 0.45) inset;
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.2) inset;
 }
 
 .ui.basic.buttons {
@@ -2336,21 +2336,21 @@ input::selection {
 
 .ui.basic.buttons .button:hover,
 .ui.basic.button:hover {
-  background: #FFFFFF !important;
+  background: rgba(255, 255, 255, 0.2) !important;
   color: rgba(255, 255, 255, 0.8) !important;
   box-shadow: 0px 0px 0px 1px rgba(24, 26, 28, 0.35) inset, 0px 0px 0px 0px rgba(24, 26, 28, 0.45) inset;
 }
 
 .ui.basic.buttons .button:focus,
 .ui.basic.button:focus {
-  background: #FFFFFF !important;
+  background: rgba(255, 255, 255, 0.2) !important;
   color: rgba(255, 255, 255, 0.8) !important;
   box-shadow: 0px 0px 0px 1px rgba(24, 26, 28, 0.35) inset, 0px 0px 0px 0px rgba(24, 26, 28, 0.45) inset;
 }
 
 .ui.basic.buttons .button:active,
 .ui.basic.button:active {
-  background: #F8F8F8 !important;
+  background: rgba(255, 255, 255, 0.2) !important;
   color: rgba(255, 255, 255, 0.9) !important;
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 4px 0px rgba(24, 26, 28, 0.45) inset;
 }
@@ -19932,13 +19932,13 @@ Floated Menu / Item
 /* Info */
 
 .ui.info.message {
-  background-color: #F8FFFF;
+  background-color: rgba(49, 204, 236, 0.2);
   color: #276F86;
 }
 
 .ui.info.message,
 .ui.attached.info.message {
-  box-shadow: 0px 0px 0px 1px #A9D5DE inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 1px #31ccec inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 .ui.info.message .header {

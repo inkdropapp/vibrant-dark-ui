@@ -118,6 +118,15 @@
 @strongTransparentWhite     : rgba(0, 0, 0, 0.15);
 
 /*-------------------
+    Emotive Colors
+--------------------*/
+
+/* Info */
+@infoColor              : rgba(49, 204, 236, 1);
+@infoBackgroundColor    : rgba(49, 204, 236, 0.2);
+@infoBorderColor        : rgba(49, 204, 236, 1);
+
+/*-------------------
       Borders
 --------------------*/
 
