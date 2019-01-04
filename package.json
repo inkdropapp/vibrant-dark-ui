@@ -49,7 +49,6 @@
     "mkdirp": "^0.5.1",
     "require-dot-file": "^0.4.0",
     "run-sequence": "^1.1.0",
-    "wrench": "https://github.com/derekslife/wrench-js/tarball/156eaceed68ed31ffe2a3ecfbcb2be6ed1417fb2",
     "yamljs": "^0.2.3"
   },
   "dependencies": {}
