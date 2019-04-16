@@ -6,7 +6,7 @@
        Element
 --------------------*/
 
-@background: @white;
+@background: rgba(0, 0, 0, 0.2);
 @borderWidth: 1px;
 @border: @borderWidth solid @borderColor;
 
@@ -70,7 +70,7 @@
 
 /* Stacked */
 @stackedHeight: 6px;
-@stackedPageBackground: @subtleTransparentBlack;
+@stackedPageBackground: rgba(0, 0, 0, 0.1);
 @stackedPadding: @verticalPadding + (0.4em);
 @tallStackedPadding: @verticalPadding + (0.8em);
 

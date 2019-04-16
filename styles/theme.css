@@ -567,7 +567,7 @@ body {
   padding: 0px;
   overflow-x: hidden;
   min-width: 320px;
-  background: #2E3235;
+  background: rgba(0, 0, 0, 0.2);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   font-size: 14px;
   line-height: 1.4285em;
@@ -766,7 +766,7 @@ input::selection {
      Form Input
    ---------------*/
   /* This adjusts the default form input across all elements */
-  --input-background: #2E3235;
+  --input-background: transparent;
   --input-vertical-padding: 0.78571429em;
   --input-horizontal-padding: 1em;
   --input-padding: 0.78571429em 1em;
@@ -801,7 +801,7 @@ input::selection {
   /*-------------------
           Page
    --------------------*/
-  --page-background: #2E3235;
+  --page-background: rgba(0, 0, 0, 0.2);
   --page-overflow-x: hidden;
   --line-height: 1.4285em;
   --text-color: #DDDDDD;
@@ -1497,13 +1497,14 @@ input::selection {
   /*-------------------
         Side Bar
   --------------------*/
-  --sidebar-background: #2E3235;
+  --sidebar-background: rgba(0, 0, 0, 0.2);
   --sidebar-menu-item-active-background: rgba(0, 0, 0, 0.2);
   --sidebar-menu-section-color: rgba(255, 255, 255, 0.5);
   --sidebar-menu-item-color: #DDDDDD;
   --sidebar-menu-action-color: rgba(255, 255, 255, 0.5);
   --sidebar-menu-action-hover-color: #C06D36;
-  --sidebar-sync-status-view-background: #26292C;
+  --sidebar-sync-status-view-border-top: 1px solid rgba(255, 255, 255, 0.1);
+  --sidebar-sync-status-view-background: transparent;
   --sidebar-sync-status-view-text-color: #DDDDDD;
   --sidebar-sync-status-view-detail-color: rgba(255, 255, 255, 0.5);
   /*-------------------
@@ -1514,7 +1515,7 @@ input::selection {
   /*-------------------
         Note List Bar
   --------------------*/
-  --note-list-bar-background: #34393D;
+  --note-list-bar-background: rgba(0, 0, 0, 0.4);
   --note-list-view-item-color: rgba(255, 255, 255, 0.6);
   --note-list-view-item-separator-border: 1px solid #2E3235;
   --note-list-view-item-date-color: #C06D36;
@@ -14982,7 +14983,7 @@ img.ui.bordered.image {
   line-height: 1.21428571em;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   padding: 0.67857143em 1em;
-  background: #2E3235;
+  background: transparent;
   border: 1px solid rgba(24, 26, 28, 0.45);
   color: #DDDDDD;
   border-radius: 0.28571429rem;
@@ -15086,7 +15087,7 @@ img.ui.bordered.image {
 .ui.input.focus > input,
 .ui.input > input:focus {
   border-color: #85B7D9;
-  background: #2E3235;
+  background: transparent;
   color: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -19174,7 +19175,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.segment {
   position: relative;
-  background: #2E3235;
+  background: rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 1px 2px 0 rgba(24, 26, 28, 0.45);
   box-shadow: 0px 1px 2px 0 rgba(24, 26, 28, 0.45);
   margin: 1rem 0em;
@@ -19258,7 +19259,7 @@ ol.ui.horizontal.list li:before,
 /* Table */
 
 .ui.basic.table.segment {
-  background: #2E3235;
+  background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(24, 26, 28, 0.45);
   -webkit-box-shadow: 0px 1px 2px 0 rgba(24, 26, 28, 0.45);
   box-shadow: 0px 1px 2px 0 rgba(24, 26, 28, 0.45);
@@ -19430,7 +19431,7 @@ ol.ui.horizontal.list li:before,
   bottom: -3px;
   left: 0%;
   border-top: 1px solid rgba(24, 26, 28, 0.45);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 6px;
   visibility: visible;
@@ -19621,7 +19622,7 @@ ol.ui.horizontal.list li:before,
   background-color: transparent;
   border-radius: 0px;
   padding: 0em;
-  background-color: #2E3235;
+  background-color: rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 1px 2px 0 rgba(24, 26, 28, 0.45);
   box-shadow: 0px 1px 2px 0 rgba(24, 26, 28, 0.45);
   margin: 1rem 0em;
@@ -20122,6 +20123,13 @@ ol.ui.horizontal.list li:before,
 /*******************************
          Theme Overrides
 *******************************/
+
+.ui.piled.segments:after,
+.ui.piled.segments:before,
+.ui.piled.segment:after,
+.ui.piled.segment:before {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 /*******************************
          Site Overrides
@@ -21058,7 +21066,7 @@ ol.ui.horizontal.list li:before,
   line-height: 1.21428571em;
   padding: 0.67857143em 1em;
   font-size: 1em;
-  background: #2E3235;
+  background: transparent;
   border: 1px solid rgba(24, 26, 28, 0.45);
   color: #DDDDDD;
   border-radius: 0.28571429rem;
@@ -21075,7 +21083,7 @@ ol.ui.horizontal.list li:before,
   -webkit-appearance: none;
   tap-highlight-color: rgba(255, 255, 255, 0);
   padding: 0.78571429em 1em;
-  background: #2E3235;
+  background: transparent;
   border: 1px solid rgba(24, 26, 28, 0.45);
   outline: none;
   color: #DDDDDD;
@@ -21345,7 +21353,7 @@ ol.ui.horizontal.list li:before,
   color: rgba(255, 255, 255, 0.95);
   border-color: #85B7D9;
   border-radius: 0.28571429rem;
-  background: #2E3235;
+  background: transparent;
   -webkit-box-shadow: 0px 0em 0em 0em rgba(24, 26, 28, 0.35) inset;
   box-shadow: 0px 0em 0em 0em rgba(24, 26, 28, 0.35) inset;
 }
@@ -21354,7 +21362,7 @@ ol.ui.horizontal.list li:before,
   color: rgba(255, 255, 255, 0.95);
   border-color: #85B7D9;
   border-radius: 0.28571429rem;
-  background: #2E3235;
+  background: transparent;
   -webkit-box-shadow: 0px 0em 0em 0em rgba(24, 26, 28, 0.35) inset;
   box-shadow: 0px 0em 0em 0em rgba(24, 26, 28, 0.35) inset;
   -webkit-appearance: none;
@@ -21735,7 +21743,7 @@ ol.ui.horizontal.list li:before,
 .ui.inverted.form input[type="text"],
 .ui.inverted.form input[type="file"],
 .ui.inverted.form input[type="url"] {
-  background: #2E3235;
+  background: transparent;
   border-color: rgba(0, 0, 0, 0.1);
   color: #DDDDDD;
   -webkit-box-shadow: none;
@@ -33299,7 +33307,7 @@ body.dimmable > .dimmer {
   transform: rotateZ(0deg);
   min-width: 14em;
   min-height: 2.71428571em;
-  background: #2E3235;
+  background: transparent;
   display: inline-block;
   padding: 0.78571429em 2.1em 0.78571429em 1em;
   color: #DDDDDD;
@@ -37298,7 +37306,7 @@ a.ui.nag {
   line-height: 1.21428571em;
   padding: 0.67857143em 1em;
   font-size: 1em;
-  background: #2E3235;
+  background: transparent;
   border: 1px solid rgba(24, 26, 28, 0.45);
   color: #DDDDDD;
   -webkit-box-shadow: 0em 0em 0em 0em transparent inset;
@@ -37459,7 +37467,7 @@ a.ui.nag {
 
 .ui.search > .prompt:focus {
   border-color: rgba(24, 26, 28, 0.35);
-  background: #2E3235;
+  background: transparent;
   color: rgba(255, 255, 255, 0.95);
 }
 
@@ -38046,7 +38054,7 @@ body.pushable {
 }
 
 body.pushable > .pusher {
-  background: #2E3235;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 /* Pusher should inherit background from context */

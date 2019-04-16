@@ -21,7 +21,8 @@
 @sidebarMenuItemColor  : @textColor;
 @sidebarMenuActionColor : @lightTextColor;
 @sidebarMenuActionHoverColor : @primaryColorFocus;
-@sidebarSyncStatusViewBackground: #26292C;
+@sidebarSyncStatusViewBorderTop: 1px solid rgba(255, 255, 255, 0.1);
+@sidebarSyncStatusViewBackground: transparent;
 @sidebarSyncStatusViewTextColor: @textColor;
 @sidebarSyncStatusViewDetailColor: @lightTextColor;
 
@@ -34,7 +35,7 @@
 /*-------------------
       Note List Bar
 --------------------*/
-@noteListBarBackground: #34393D;
+@noteListBarBackground: rgba(0, 0, 0, 0.4);
 @noteListViewItemColor: @mutedTextColor;
 @noteListViewItemSeparatorBorder: 1px solid @white;
 @noteListViewItemDateColor: @primaryColor;
