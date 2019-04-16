@@ -41,9 +41,7 @@ gulp.task('default', false, [
 
 gulp.task('watch', 'Watch for site/theme changes', watch);
 
-gulp.task('build', 'Builds theme from source', [ 'build-css' ]);
-
-// gulp.task('build', 'Builds all files from source', build);
+gulp.task('build', 'Builds all files from source', [ 'build-css', 'build-assets' ]);
 gulp.task('build-javascript', 'Builds all javascript from source', buildJS);
 gulp.task('build-css', 'Builds all css from source', buildCSS);
 gulp.task('build-assets', 'Copies all assets from source', buildAssets);

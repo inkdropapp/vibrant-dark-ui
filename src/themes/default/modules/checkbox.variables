@@ -11,7 +11,7 @@
 @labelDistance: 1.85714em; /* 26px @ 14/em */
 
 /* Checkbox */
-@checkboxBackground: @white;
+@checkboxBackground: rgba(0, 0, 0, 0.2);
 @checkboxBorder: 1px solid @solidBorderColor;
 @checkboxBorderRadius: @3px;
 @checkboxTransition:
@@ -55,7 +55,7 @@
 
 /* Active */
 @labelActiveColor: @selectedTextColor;
-@checkboxActiveBackground: @white;
+@checkboxActiveBackground: rgba(0, 0, 0, 0.2);
 @checkboxActiveBorderColor: @selectedBorderColor;
 @checkboxActiveCheckColor: @selectedTextColor;
 @checkboxActiveCheckOpacity: 1;
@@ -162,6 +162,7 @@
 
 @toggleLaneBackground: @transparentBlack;
 @toggleLaneHeight: @toggleHandleSize;
+@toggleLaneBoxShadow: none;
 @toggleLaneVerticalOffset: 0rem;
 @toggleOffOffset: -0.05rem;
 @toggleOnOffset: (@toggleLaneWidth - @toggleHandleSize) + 0.15rem;
@@ -175,9 +176,12 @@
 @toggleHoverColor: @toggleFocusColor;
 
 @toggleOffLabelColor: @checkboxColor;
+@toggleOffHandleBoxShadow: @handleBoxShadow;
 
 @toggleOnLabelColor: @selectedTextColor;
 @toggleOnLaneColor: @primaryColor;
+
+@toggleOnHandleBoxShadow: @handleBoxShadow;
 
 @toggleOnFocusLaneColor: @primaryColorFocus;
 @toggleOnFocusLabelColor: @toggleOnLabelColor;

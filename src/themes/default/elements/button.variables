@@ -9,7 +9,7 @@
 /* Button */
 @verticalMargin: 0em;
 @horizontalMargin: 0.25em;
-@backgroundColor: #E0E1E2;
+@backgroundColor: darken(@white, 4);
 @backgroundImage: none;
 @background: @backgroundColor @backgroundImage;
 @lineHeight: 1em;
@@ -22,8 +22,8 @@
 @textTransform: none;
 @tapColor: transparent;
 @fontFamily: @pageFont;
-@fontWeight: bold;
-@textColor: rgba(0, 0, 0, 0.6);
+@fontWeight: @bold;
+@textColor: #DDDDDD;
 @textShadow: none;
 @invertedTextShadow: @textShadow;
 @borderRadius: @defaultBorderRadius;
@@ -84,7 +84,7 @@
 --------------------*/
 
 /* Hovered */
-@hoverBackgroundColor: #CACBCD;
+@hoverBackgroundColor: darken(@white, 2);
 @hoverBackgroundImage: @backgroundImage;
 @hoverBoxShadow: @boxShadow;
 @hoverColor: @hoveredTextColor;
@@ -152,8 +152,8 @@
 
 @orBackgroundColor: @white;
 @orTextShadow: @invertedTextShadow;
-@orTextStyle: normal;
-@orTextWeight: bold;
+@orTextStyle: @normal;
+@orTextWeight: @bold;
 @orTextColor: @lightTextColor;
 
 
@@ -198,14 +198,14 @@
 @basicColoredBorderSize: 1px;
 
 @basicBackground: transparent none;
-@basicFontWeight: normal;
+@basicFontWeight: @normal;
 @basicBorder: 1px solid @borderColor;
 @basicBoxShadow: 0px 0px 0px @basicBorderSize @borderColor inset;
 @basicLoadingColor: @offWhite;
 @basicTextTransform: none;
 
 /* Basic Hover */
-@basicHoverBackground: #FFFFFF;
+@basicHoverBackground: @white;
 @basicHoverTextColor: @hoveredTextColor;
 @basicHoverBoxShadow:
   0px 0px 0px @basicBorderSize @selectedBorderColor inset,
@@ -217,7 +217,7 @@
 @basicFocusBoxShadow: @basicHoverBoxShadow;
 
 /* Basic Down */
-@basicDownBackground: #F8F8F8;
+@basicDownBackground: @offWhite;
 @basicDownTextColor: @pressedTextColor;
 @basicDownBoxShadow:
   0px 0px 0px @basicBorderSize rgba(0, 0, 0, 0.15) inset,
@@ -318,12 +318,14 @@
 /* Ordinality */
 @primaryBackgroundImage: @coloredBackgroundImage;
 @primaryTextColor: @invertedTextColor;
+@lightPrimaryTextColor: @invertedTextColor;
 @primaryTextShadow: @invertedTextShadow;
 @primaryBoxShadow: @coloredBoxShadow;
 
 @secondaryBackgroundImage: @coloredBackgroundImage;
 @secondaryTextColor: @invertedTextColor;
 @secondaryTextShadow: @invertedTextShadow;
+@lightSecondaryTextColor: @invertedTextColor;
 @secondaryBoxShadow: @coloredBoxShadow;
 
 @positiveBackgroundImage: @coloredBackgroundImage;

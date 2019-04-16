@@ -15,13 +15,13 @@ var
   gulpif       = require('gulp-if'),
   header       = require('gulp-header'),
   less         = require('gulp-less'),
-  minifyCSS    = require('gulp-minify-css'),
+  minifyCSS    = require('gulp-clean-css'),
   plumber      = require('gulp-plumber'),
-  print        = require('gulp-print'),
+  print        = require('gulp-print').default,
   rename       = require('gulp-rename'),
   replace      = require('gulp-replace'),
   uglify       = require('gulp-uglify'),
-  util         = require('gulp-util'),
+  replaceExt   = require('replace-ext'),
   watch        = require('gulp-watch'),
 
   // user config
@@ -142,12 +142,12 @@ module.exports = function () {
       }
       else if(isPackagedTheme) {
         console.log('Change detected in packaged theme');
-        lessPath = util.replaceExtension(file.path, '.less');
+        lessPath = replaceExt(file.path, '.less');
         lessPath = lessPath.replace(tasks.regExp.theme, source.definitions);
       }
       else if(isSiteTheme) {
         console.log('Change detected in site theme');
-        lessPath = util.replaceExtension(file.path, '.less');
+        lessPath = replaceExt(file.path, '.less');
         lessPath = lessPath.replace(source.site, source.definitions);
       }
       else {
@@ -188,7 +188,7 @@ module.exports = function () {
           })
         ;
 
-        compressedStream = stream
+        compressedStream
           .pipe(plumber())
           .pipe(replace(assets.source, assets.compressed))
           .pipe(minifyCSS(settings.minify))

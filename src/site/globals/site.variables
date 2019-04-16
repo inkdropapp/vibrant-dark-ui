@@ -1,184 +1,27 @@
 /*******************************
      User Global Variables
 *******************************/
-
+@fontPath  : 'inkdrop://default-light-ui/styles/themes/default/assets/fonts';
 @headerFont        : -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 @pageFont          : -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 @importGoogleFonts : false;
+@useCustomScrollbars: false;
 
-/*-------------------
-      Site Colors
---------------------*/
-
-/*---  Colors  ---*/
-@red              : #DB2828;
-@orange           : #C06D36;
-@yellow           : #FBBD08;
-@olive            : #B5CC18;
-@green            : #21BA45;
-@teal             : #00B5AD;
-@blue             : #2185D0;
-@violet           : #6435C9;
-@purple           : #A333C8;
-@pink             : #E03997;
-@brown            : #A5673F;
-@grey             : #767676;
-@black            : #F9FAFB;
-
-/*---  Light Colors  ---*/
-@lightRed         : #FF695E;
-@lightOrange      : #FF851B;
-@lightYellow      : #FFE21F;
-@lightOlive       : #D9E778;
-@lightGreen       : #2ECC40;
-@lightTeal        : #6DFFFF;
-@lightBlue        : #54C8FF;
-@lightViolet      : #A291FB;
-@lightPurple      : #DC73FF;
-@lightPink        : #FF8EDF;
-@lightBrown       : #D67C1C;
-@lightGrey        : #DCDDDE;
-@lightBlack       : #545454;
-
-/*---   Neutrals  ---*/
-@fullBlack        : #FFFFFF;
-@offWhite         : #34393D;
-@darkWhite        : #4B5257;
-@midWhite         : #666E74;
-@white            : #2E3235;
-
-/*--- Colored Backgrounds ---*/
-@redBackground    : #FFE8E6;
-@orangeBackground : #FFEDDE;
-@yellowBackground : #FFF8DB;
-@oliveBackground  : #FBFDEF;
-@greenBackground  : #E5F9E7;
-@tealBackground   : #E1F7F7;
-@blueBackground   : #DFF0FF;
-@violetBackground : #EAE7FF;
-@purpleBackground : #F6E7FF;
-@pinkBackground   : #FFE3FB;
-@brownBackground  : #F1E2D3;
-
-
-@primaryColor: @orange;
-@primaryColorFocus    : @primaryColor;
+@primaryColor: #C06D36;
+@primaryColorFocus: #C06D36;
 @linkHoverColor: @primaryColor;
 
-
-/*-------------------
-        Page
---------------------*/
-
-// @pageBackground      : rgba(46, 50, 53, 0.2);
-@pageBackground      : darken(rgba(46, 50, 53, 0.2), 20);
-@textColor           : rgba(255, 255, 255, 0.7);
-
-/*-------------------
-  Highlighted Text
---------------------*/
-
-@highlightBackground      : #FFFFFF - #CCE2FF;
-@inputHighlightBackground : #FFFFFF - rgba(100, 100, 100, 0.4);
-
-/*-------------------
-     Neutral Text
---------------------*/
-
-@darkTextColor               : rgba(255, 255, 255, 0.95);
-@mutedTextColor              : rgba(255, 255, 255, 0.6);
-@lightTextColor              : rgba(255, 255, 255, 0.50);
-
-@unselectedTextColor         : rgba(255, 255, 255, 0.4);
-@hoveredTextColor            : rgba(255, 255, 255, 0.8);
-@pressedTextColor            : rgba(255, 255, 255, 0.9);
-@selectedTextColor           : rgba(255, 255, 255, 0.95);
-@disabledTextColor           : rgba(255, 255, 255, 0.2);
-
-@invertedTextColor           : rgba(0, 0, 0, 0.9);
-@invertedMutedTextColor      : rgba(0, 0, 0, 0.8);
-@invertedLightTextColor      : rgba(0, 0, 0, 0.7);
-@invertedUnselectedTextColor : rgba(0, 0, 0, 0.5);
-@invertedHoveredTextColor    : rgba(0, 0, 0, 1);
-@invertedPressedTextColor    : rgba(0, 0, 0, 1);
-@invertedSelectedTextColor   : rgba(0, 0, 0, 1);
-@invertedDisabledTextColor   : rgba(0, 0, 0, 0.2);
-
-/*-------------------
-     Alpha Colors
---------------------*/
-
-@subtleTransparentBlack     : rgba(255, 255, 255, 0.03);
-@transparentBlack           : rgba(255, 255, 255, 0.05);
-@strongTransparentBlack     : rgba(255, 255, 255, 0.10);
-@veryStrongTransparentBlack : rgba(255, 255, 255, 0.15);
-
-@subtleTransparentWhite     : rgba(0, 0, 0, 0.02);
-@transparentWhite           : rgba(0, 0, 0, 0.08);
-@strongTransparentWhite     : rgba(0, 0, 0, 0.15);
-
-/*-------------------
-    Emotive Colors
---------------------*/
-
-/* Info */
-@infoColor              : rgba(49, 204, 236, 1);
-@infoBackgroundColor    : rgba(49, 204, 236, 0.2);
-@infoBorderColor        : rgba(49, 204, 236, 1);
-
-/*-------------------
-      Borders
---------------------*/
-
-@circularRadius                : 500rem;
-
-@borderColor               : rgba(24, 26, 28, 0.45);
-@strongBorderColor         : rgba(24, 26, 28, 0.22);
-@internalBorderColor       : rgba(24, 26, 28, 0.1);
-@selectedBorderColor       : rgba(24, 26, 28, 0.35);
-@strongSelectedBorderColor : rgba(24, 26, 28, 0.5);
-@disabledBorderColor       : rgba(24, 26, 28, 0.5);
-
-@solidInternalBorderColor  : #333333;
-@solidBorderColor          : #1B1C1E;
-@solidSelectedBorderColor  : #222222;
-
-@whiteBorderColor              : rgba(0, 0, 0, 0.1);
-@selectedWhiteBorderColor      : rgba(0, 0, 0, 0.8);
-
-@blackBorderColor              : rgba(255, 255, 255, 0.1);
-@selectedBlackBorderColor      : rgba(255, 255, 255, 0.8);
-
-@solidWhiteBorderColor         : #34393D;
-@selectedSolidWhiteBorderColor : #4D5B66;
-
-
-/*--------------
-   Form Input
----------------*/
-
-/* Input Text Color */
-@inputPlaceholderColor: darken(@textColor, 40);
-@inputPlaceholderFocusColor: darken(@textColor, 40);
-
-/*-------------------
-       Links
---------------------*/
-
-@linkColor           : @primaryColor;
-@linkHoverColor      : lighten(saturate(@linkColor, 20), 15, relative);
 
 /*-------------------
       Side Bar
 --------------------*/
 @sidebarBackground     : @pageBackground;
-@sidebarMenuItemActiveBackground: linear-gradient( to right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
+@sidebarMenuItemActiveBackground: rgba(0, 0, 0, 0.2);
 @sidebarMenuSectionColor: @lightTextColor;
 @sidebarMenuItemColor  : @textColor;
 @sidebarMenuActionColor : @lightTextColor;
-@sidebarMenuActionHoverColor : @textColor;
-@sidebarSyncStatusViewBorderTop: 1px solid rgba(255, 255, 255, 0.1);
-@sidebarSyncStatusViewBackground: transparent;
+@sidebarMenuActionHoverColor : @primaryColorFocus;
+@sidebarSyncStatusViewBackground: #26292C;
 @sidebarSyncStatusViewTextColor: @textColor;
 @sidebarSyncStatusViewDetailColor: @lightTextColor;
 
@@ -191,21 +34,45 @@
 /*-------------------
       Note List Bar
 --------------------*/
-@noteListBarBackground: rgba(0, 0, 0, 0.4);
+@noteListBarBackground: #34393D;
 @noteListViewItemColor: @mutedTextColor;
-@noteListViewItemSeparatorBorder: 1px solid @blackBorderColor;
+@noteListViewItemSeparatorBorder: 1px solid @white;
 @noteListViewItemDateColor: @primaryColor;
 @noteListViewItemTagColor: @primaryColor;
-@noteListViewItemActiveBackground: @primaryColorFocus;
+@noteListViewItemActiveBackground: @primaryColor;
 @noteListViewItemActiveColor: @textColor;
 @noteListViewItemActiveDateColor: @textColor;
 @noteListViewItemActiveTagColor: @textColor;
 @noteListViewItemFocusInnerShadow: inset 0 0 4px rgba(255,255,255,0.4);
 @noteSearchBarBorderBottom: 1px solid @white;
-@noteSearchBarBackground: rgba(255, 255, 255, 0.05);
+
+/*-------------------
+      Header Note Menu
+--------------------*/
+@headerNoteMenuBackground: transparent;
+@headerNoteMenuColor: @lightTextColor;
+@headerNoteMenuActionItemSeparatorBorder: 1px solid @whiteDown;
+@headerNoteMenuEncryptButtonColor: @yellowTextColor;
+@headerNoteMenuEncryptButtonBackground: @yellowBackground;
 
 /*-------------------
       Preferences
 --------------------*/
 @preferencesSidebarBackground: @white;
+@preferencesSidebarItemActiveBackground: rgba(192, 109, 54, 0.2);
+@preferencesViewBackground: @offWhite;
 
+/*-------------------
+      Task Icons
+--------------------*/
+@taskIconActive: darkgray;
+@taskIconOnHold: orange;
+@taskIconCompleted: limegreen;
+@taskIconDropped: lightcoral;
+
+/*-------------------
+  Task Progress View
+--------------------*/
+@taskProgressViewBackgroundColor: rgba(0, 0, 0, 0.3);
+@taskProgressViewForegroundColor: rgba(255, 255, 255, 0.6);
+@taskProgressViewCompletedColor: rgb(50, 205, 50);

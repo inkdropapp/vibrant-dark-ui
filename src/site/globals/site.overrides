@@ -1,3 +1,1007 @@
 /*******************************
          Site Overrides
 *******************************/
+
+:root {
+  /*******************************
+           Site Settings
+  *******************************/
+
+  /*-------------------
+         Fonts
+   --------------------*/
+
+  --font-name: @fontName;
+  --font-smoothing: @fontSmoothing;
+
+  --header-font: @headerFont;
+  --page-font: @pageFont;
+
+  --google-font-name: @googleFontName;
+  --import-google-fonts: @importGoogleFonts;
+  --google-font-sizes: @googleFontSizes;
+  --google-subset: @googleSubset;
+
+  --google-protocol: @googleProtocol;
+  --google-font-request: @googleFontRequest;
+
+  /*-------------------
+        Base Sizes
+   --------------------*/
+
+  /* This is the single variable that controls them all */
+  --em-size: @emSize;
+
+  /* The size of page text  */
+  --font-size: @fontSize;
+
+
+  /*-------------------
+      Border Radius
+   --------------------*/
+
+  /* See Power-user section below
+     for explanation of @px variables
+  */
+  --relative-border-radius: @relativeBorderRadius;
+  --absolute-border-radius: @absoluteBorderRadius;
+
+  --default-border-radius: @defaultBorderRadius;
+
+  /*-------------------
+      Brand Colors
+   --------------------*/
+
+  --primary-color: @primaryColor;
+  --secondary-color: @secondaryColor;
+
+  --light-primary-color: @lightPrimaryColor;
+  --light-secondary-color: @lightSecondaryColor;
+
+  /*--------------
+    Page Heading
+   ---------------*/
+
+  --header-font-weight: @headerFontWeight;
+  --header-line-height: @headerLineHeight;
+
+  --h1: @h1;
+  --h2: @h2;
+  --h3: @h3;
+  --h4: @h4;
+  --h5: @h5;
+
+  /*--------------
+     Form Input
+   ---------------*/
+
+  /* This adjusts the default form input across all elements */
+  --input-background: @inputBackground;
+  --input-vertical-padding: @inputVerticalPadding;
+  --input-horizontal-padding: @inputHorizontalPadding;
+  --input-padding: @inputPadding;
+
+  /* Input Text Color */
+  --input-color: @inputColor;
+  --input-placeholder-color: @inputPlaceholderColor;
+  --input-placeholder-focus-color: @inputPlaceholderFocusColor;
+
+  /* Line Height Default For Inputs in Browser */
+  --input-line-height: @inputLineHeight;
+
+  /*-------------------
+      Focused Input
+   --------------------*/
+
+  /* Used on inputs, textarea etc */
+  --focused-form-border-color: @focusedFormBorderColor;
+
+  /* Used on dropdowns, other larger blocks */
+  --focused-form-muted-border-color: @focusedFormMutedBorderColor;
+
+  /*-------------------
+          Sizes
+   --------------------*/
+
+  /*
+    Sizes are all expressed in terms of 14px/em (default em)
+    This ensures these "ratios" remain constant despite changes in EM
+  */
+
+  --mini-size: @miniSize;
+  --tiny-size: @tinySize;
+  --small-size: @smallSize;
+  --medium-size: @mediumSize;
+  --large-size: @largeSize;
+  --big-size: @bigSize;
+  --huge-size: @hugeSize;
+  --massive-size: @massiveSize;
+
+
+  /*-------------------
+          Page
+   --------------------*/
+
+  --page-background: @pageBackground;
+  --page-overflow-x: @pageOverflowX;
+
+  --line-height: @lineHeight;
+  --text-color: @textColor;
+
+  /*-------------------
+        Paragraph
+   --------------------*/
+
+  --paragraph-margin: @paragraphMargin;
+  --paragraph-line-height: @paragraphLineHeight;
+
+  /*-------------------
+         Links
+   --------------------*/
+
+  --link-color: @linkColor;
+  --link-underline: @linkUnderline;
+  --link-hover-color: @linkHoverColor;
+  --link-hover-underline: @linkHoverUnderline;
+
+  /*-------------------
+    Highlighted Text
+   --------------------*/
+
+  --highlight-background: @highlightBackground;
+  --highlight-color: @highlightColor;
+
+  --input-highlight-background: @inputHighlightBackground;
+  --input-highlight-color: @inputHighlightColor;
+
+
+  /*-------------------
+         Loader
+   --------------------*/
+
+  --loader-size: @loaderSize;
+  --loader-speed: @loaderSpeed;
+  --loader-line-width: @loaderLineWidth;
+  --loader-fill-color: @loaderFillColor;
+  --loader-line-color: @loaderLineColor;
+
+  --inverted-loader-fill-color: @invertedLoaderFillColor;
+  --inverted-loader-line-color: @invertedLoaderLineColor;
+
+  /*-------------------
+          Grid
+   --------------------*/
+
+  --column-count: @columnCount;
+
+  /*-------------------
+       Transitions
+   --------------------*/
+
+  --default-duration: @defaultDuration;
+  --default-easing: @defaultEasing;
+
+  /*-------------------
+       Breakpoints
+   --------------------*/
+
+  --mobile-breakpoint: @mobileBreakpoint;
+  --tablet-breakpoint: @tabletBreakpoint;
+  --computer-breakpoint: @computerBreakpoint;
+  --large-monitor-breakpoint: @largeMonitorBreakpoint;
+  --widescreen-monitor-breakpoint: @widescreenMonitorBreakpoint;
+
+  /*-------------------
+        Site Colors
+   --------------------*/
+
+  /*---  Colors  ---*/
+  --red: @red;
+  --orange: @orange;
+  --yellow: @yellow;
+  --olive: @olive;
+  --green: @green;
+  --teal: @teal;
+  --blue: @blue;
+  --violet: @violet;
+  --purple: @purple;
+  --pink: @pink;
+  --brown: @brown;
+  --grey: @grey;
+  --black: @black;
+
+  /*---  Light Colors  ---*/
+  --light-red: @lightRed;
+  --light-orange: @lightOrange;
+  --light-yellow: @lightYellow;
+  --light-olive: @lightOlive;
+  --light-green: @lightGreen;
+  --light-teal: @lightTeal;
+  --light-blue: @lightBlue;
+  --light-violet: @lightViolet;
+  --light-purple: @lightPurple;
+  --light-pink: @lightPink;
+  --light-brown: @lightBrown;
+  --light-grey: @lightGrey;
+  --light-black: @lightBlack;
+
+  /*---   Neutrals  ---*/
+  --full-black: @fullBlack;
+  --off-white: @offWhite;
+  --dark-white: @darkWhite;
+  --mid-white: @midWhite;
+  --white: @white;
+
+  /*--- Colored Backgrounds ---*/
+  --red-background: @redBackground;
+  --orange-background: @orangeBackground;
+  --yellow-background: @yellowBackground;
+  --olive-background: @oliveBackground;
+  --green-background: @greenBackground;
+  --teal-background: @tealBackground;
+  --blue-background: @blueBackground;
+  --violet-background: @violetBackground;
+  --purple-background: @purpleBackground;
+  --pink-background: @pinkBackground;
+  --brown-background: @brownBackground;
+
+  /*--- Colored Headers ---*/
+  --red-header-color: @redHeaderColor;
+  --olive-header-color: @oliveHeaderColor;
+  --green-header-color: @greenHeaderColor;
+  --yellow-header-color: @yellowHeaderColor;
+  --blue-header-color: @blueHeaderColor;
+  --teal-header-color: @tealHeaderColor;
+  --pink-header-color: @pinkHeaderColor;
+  --violet-header-color: @violetHeaderColor;
+  --purple-header-color: @purpleHeaderColor;
+  --orange-header-color: @orangeHeaderColor;
+  --brown-header-color: @brownHeaderColor;
+
+  /*--- Colored Text ---*/
+  --red-text-color: @redTextColor;
+  --orange-text-color: @orangeTextColor;
+  --yellow-text-color: @yellowTextColor;
+  --olive-text-color: @oliveTextColor;
+  --green-text-color: @greenTextColor;
+  --teal-text-color: @tealTextColor;
+  --blue-text-color: @blueTextColor;
+  --violet-text-color: @violetTextColor;
+  --purple-text-color: @purpleTextColor;
+  --pink-text-color: @pinkTextColor;
+  --brown-text-color: @brownTextColor;
+
+  /*--- Colored Border ---*/
+  --red-border-color: @redBorderColor;
+  --orange-border-color: @orangeBorderColor;
+  --yellow-border-color: @yellowBorderColor;
+  --olive-border-color: @oliveBorderColor;
+  --green-border-color: @greenBorderColor;
+  --teal-border-color: @tealBorderColor;
+  --blue-border-color: @blueBorderColor;
+  --violet-border-color: @violetBorderColor;
+  --purple-border-color: @purpleBorderColor;
+  --pink-border-color: @pinkBorderColor;
+  --brown-border-color: @brownBorderColor;
+
+  /*-------------------
+       Alpha Colors
+   --------------------*/
+
+  --subtle-transparent-black: @subtleTransparentBlack;
+  --transparent-black: @transparentBlack;
+  --strong-transparent-black: @strongTransparentBlack;
+  --very-strong-transparent-black: @veryStrongTransparentBlack;
+
+  --subtle-transparent-white: @subtleTransparentWhite;
+  --transparent-white: @transparentWhite;
+  --strong-transparent-white: @strongTransparentWhite;
+
+  /*-------------------
+         Accents
+   --------------------*/
+
+  /* Differentiating Neutrals */
+  --subtle-gradient: @subtleGradient;
+
+  /* Differentiating Layers */
+  --subtle-shadow:
+    0px 1px 2px 0 @borderColor
+  ;
+  --floating-shadow:
+    0px 2px 4px 0px rgba(34, 36, 38, 0.12),
+    0px 2px 10px 0px rgba(34, 36, 38, 0.15)
+  ;
+
+  /*******************************
+             Power-User
+  *******************************/
+
+
+  /*-------------------
+      Emotive Colors
+   --------------------*/
+
+  /* Positive */
+  --positive-color: @positiveColor;
+  --positive-background-color: @positiveBackgroundColor;
+  --positive-border-color: @positiveBorderColor;
+  --positive-header-color: @positiveHeaderColor;
+  --positive-text-color: @positiveTextColor;
+
+  /* Negative */
+  --negative-color: @negativeColor;
+  --negative-background-color: @negativeBackgroundColor;
+  --negative-border-color: @negativeBorderColor;
+  --negative-header-color: @negativeHeaderColor;
+  --negative-text-color: @negativeTextColor;
+
+  /* Info */
+  --info-color: @infoColor;
+  --info-background-color: @infoBackgroundColor;
+  --info-border-color: @infoBorderColor;
+  --info-header-color: @infoHeaderColor;
+  --info-text-color: @infoTextColor;
+
+  /* Warning */
+  --warning-color: @warningColor;
+  --warning-border-color: @warningBorderColor;
+  --warning-background-color: @warningBackgroundColor;
+  --warning-header-color: @warningHeaderColor;
+  --warning-text-color: @warningTextColor;
+
+  /*-------------------
+          Paths
+   --------------------*/
+
+  /* For source only. Modified in gulp for dist */
+  --image-path: @imagePath;
+  --font-path: @fontPath;
+
+  /*-------------------
+         Em Sizes
+   --------------------*/
+
+  /*
+    This rounds @size values to the closest pixel then expresses that value in (r)em.
+    This ensures all size values round to exact pixels
+  */
+  --mini: @mini;
+  --tiny: @tiny;
+  --small: @small;
+  --medium: @medium;
+  --large: @large;
+  --big: @big;
+  --huge: @huge;
+  --massive: @massive;
+
+  /* em */
+  --relative-mini: @relativeMini;
+  --relative-tiny: @relativeTiny;
+  --relative-small: @relativeSmall;
+  --relative-medium: @relativeMedium;
+  --relative-large: @relativeLarge;
+  --relative-big: @relativeBig;
+  --relative-huge: @relativeHuge;
+  --relative-massive: @relativeMassive;
+
+  /* rem */
+  --absolute-mini: @absoluteMini;
+  --absolute-tiny: @absoluteTiny;
+  --absolute-small: @absoluteSmall;
+  --absolute-medium: @absoluteMedium;
+  --absolute-large: @absoluteLarge;
+  --absolute-big: @absoluteBig;
+  --absolute-huge: @absoluteHuge;
+  --absolute-massive: @absoluteMassive;
+
+  /*-------------------
+         Icons
+   --------------------*/
+
+  /* Maximum Glyph Width of Icon */
+  --icon-width: @iconWidth;
+
+  /*-------------------
+       Neutral Text
+   --------------------*/
+
+  --dark-text-color: @darkTextColor;
+  --muted-text-color: @mutedTextColor;
+  --light-text-color: @lightTextColor;
+
+  --unselected-text-color: @unselectedTextColor;
+  --hovered-text-color: @hoveredTextColor;
+  --pressed-text-color: @pressedTextColor;
+  --selected-text-color: @selectedTextColor;
+  --disabled-text-color: @disabledTextColor;
+
+  --inverted-text-color: @invertedTextColor;
+  --inverted-muted-text-color: @invertedMutedTextColor;
+  --inverted-light-text-color: @invertedLightTextColor;
+  --inverted-unselected-text-color: @invertedUnselectedTextColor;
+  --inverted-hovered-text-color: @invertedHoveredTextColor;
+  --inverted-pressed-text-color: @invertedPressedTextColor;
+  --inverted-selected-text-color: @invertedSelectedTextColor;
+  --inverted-disabled-text-color: @invertedDisabledTextColor;
+
+  /*-------------------
+       Brand Colors
+   --------------------*/
+
+  --facebook-color: @facebookColor;
+  --twitter-color: @twitterColor;
+  --google-plus-color: @googlePlusColor;
+  --linked-in-color: @linkedInColor;
+  --youtube-color: @youtubeColor;
+  --instagram-color: @instagramColor;
+  --pinterest-color: @pinterestColor;
+  --vk-color: @vkColor;
+
+  /*-------------------
+        Borders
+   --------------------*/
+
+  --circular-radius: @circularRadius;
+
+  --border-color: @borderColor;
+  --strong-border-color: @strongBorderColor;
+  --internal-border-color: @internalBorderColor;
+  --selected-border-color: @selectedBorderColor;
+  --strong-selected-border-color: @strongSelectedBorderColor;
+  --disabled-border-color: @disabledBorderColor;
+
+  --solid-internal-border-color: @solidInternalBorderColor;
+  --solid-border-color: @solidBorderColor;
+  --solid-selected-border-color: @solidSelectedBorderColor;
+
+  --white-border-color: @whiteBorderColor;
+  --selected-white-border-color: @selectedWhiteBorderColor;
+
+  --solid-white-border-color: @solidWhiteBorderColor;
+  --selected-solid-white-border-color: @selectedSolidWhiteBorderColor;
+
+
+  /*-------------------
+      Derived Values
+   --------------------*/
+
+  /* Loaders Position Offset */
+  --loader-offset: @loaderOffset;
+  --loader-margin: @loaderMargin;
+
+  /* Rendered Scrollbar Width */
+  --scrollbar-width: @scrollbarWidth;
+
+  /* Maximum Single Character Glyph Width, aka Capital "W" */
+  --glyph-width: @glyphWidth;
+
+  /* Used to match floats with text */
+  --line-height-offset: @lineHeightOffset;
+  --header-line-height-offset: @headerLineHeightOffset;
+
+  /* Header Spacing */
+  --header-top-margin: @headerTopMargin;
+  --header-bottom-margin: @headerBottomMargin;
+  --header-margin: @headerMargin;
+
+  /* Minimum Mobile Width */
+  --page-min-width: @pageMinWidth;
+
+  /* Positive / Negative Dupes */
+  --success-background-color: @successBackgroundColor;
+  --success-color: @successColor;
+  --success-border-color: @successBorderColor;
+  --success-header-color: @successHeaderColor;
+  --success-text-color: @successTextColor;
+
+  --error-background-color: @errorBackgroundColor;
+  --error-color: @errorColor;
+  --error-border-color: @errorBorderColor;
+  --error-header-color: @errorHeaderColor;
+  --error-text-color: @errorTextColor;
+
+
+  /* Responsive */
+  --largest-mobile-screen: @largestMobileScreen;
+  --largest-tablet-screen: @largestTabletScreen;
+  --largest-small-monitor: @largestSmallMonitor;
+  --largest-large-monitor: @largestLargeMonitor;
+
+
+  /*-------------------
+    Exact Pixel Values
+   --------------------*/
+  /*
+    These are used to specify exact pixel values in em
+    for things like borders that remain constantly
+    sized as emSize adjusts
+
+    Since there are many more sizes than names for sizes,
+    these are named by their original pixel values.
+
+  */
+
+  --1px: @1px;
+  --2px: @2px;
+  --3px: @3px;
+  --4px: @4px;
+  --5px: @5px;
+  --6px: @6px;
+  --7px: @7px;
+  --8px: @8px;
+  --9px: @9px;
+  --10px: @10px;
+  --11px: @11px;
+  --12px: @12px;
+  --13px: @13px;
+  --14px: @14px;
+  --15px: @15px;
+  --16px: @16px;
+  --17px: @17px;
+  --18px: @18px;
+  --19px: @19px;
+  --20px: @20px;
+  --21px: @21px;
+  --22px: @22px;
+  --23px: @23px;
+  --24px: @24px;
+  --25px: @25px;
+  --26px: @26px;
+  --27px: @27px;
+  --28px: @28px;
+  --29px: @29px;
+  --30px: @30px;
+  --31px: @31px;
+  --32px: @32px;
+  --33px: @33px;
+  --34px: @34px;
+  --35px: @35px;
+  --36px: @36px;
+  --37px: @37px;
+  --38px: @38px;
+  --39px: @39px;
+  --40px: @40px;
+  --41px: @41px;
+  --42px: @42px;
+  --43px: @43px;
+  --44px: @44px;
+  --45px: @45px;
+  --46px: @46px;
+  --47px: @47px;
+  --48px: @48px;
+  --49px: @49px;
+  --50px: @50px;
+  --51px: @51px;
+  --52px: @52px;
+  --53px: @53px;
+  --54px: @54px;
+  --55px: @55px;
+  --56px: @56px;
+  --57px: @57px;
+  --58px: @58px;
+  --59px: @59px;
+  --60px: @60px;
+  --61px: @61px;
+  --62px: @62px;
+  --63px: @63px;
+  --64px: @64px;
+
+  --relative1px: @relative1px;
+  --relative2px: @relative2px;
+  --relative3px: @relative3px;
+  --relative4px: @relative4px;
+  --relative5px: @relative5px;
+  --relative6px: @relative6px;
+  --relative7px: @relative7px;
+  --relative8px: @relative8px;
+  --relative9px: @relative9px;
+  --relative10px: @relative10px;
+  --relative11px: @relative11px;
+  --relative12px: @relative12px;
+  --relative13px: @relative13px;
+  --relative14px: @relative14px;
+  --relative15px: @relative15px;
+  --relative16px: @relative16px;
+  --relative17px: @relative17px;
+  --relative18px: @relative18px;
+  --relative19px: @relative19px;
+  --relative20px: @relative20px;
+  --relative21px: @relative21px;
+  --relative22px: @relative22px;
+  --relative23px: @relative23px;
+  --relative24px: @relative24px;
+  --relative25px: @relative25px;
+  --relative26px: @relative26px;
+  --relative27px: @relative27px;
+  --relative28px: @relative28px;
+  --relative29px: @relative29px;
+  --relative30px: @relative30px;
+  --relative31px: @relative31px;
+  --relative32px: @relative32px;
+  --relative33px: @relative33px;
+  --relative34px: @relative34px;
+  --relative35px: @relative35px;
+  --relative36px: @relative36px;
+  --relative37px: @relative37px;
+  --relative38px: @relative38px;
+  --relative39px: @relative39px;
+  --relative40px: @relative40px;
+  --relative41px: @relative41px;
+  --relative42px: @relative42px;
+  --relative43px: @relative43px;
+  --relative44px: @relative44px;
+  --relative45px: @relative45px;
+  --relative46px: @relative46px;
+  --relative47px: @relative47px;
+  --relative48px: @relative48px;
+  --relative49px: @relative49px;
+  --relative50px: @relative50px;
+  --relative51px: @relative51px;
+  --relative52px: @relative52px;
+  --relative53px: @relative53px;
+  --relative54px: @relative54px;
+  --relative55px: @relative55px;
+  --relative56px: @relative56px;
+  --relative57px: @relative57px;
+  --relative58px: @relative58px;
+  --relative59px: @relative59px;
+  --relative60px: @relative60px;
+  --relative61px: @relative61px;
+  --relative62px: @relative62px;
+  --relative63px: @relative63px;
+  --relative64px: @relative64px;
+
+  /* Columns */
+  --one-wide: @oneWide;
+  --two-wide: @twoWide;
+  --three-wide: @threeWide;
+  --four-wide: @fourWide;
+  --five-wide: @fiveWide;
+  --six-wide: @sixWide;
+  --seven-wide: @sevenWide;
+  --eight-wide: @eightWide;
+  --nine-wide: @nineWide;
+  --ten-wide: @tenWide;
+  --eleven-wide: @elevenWide;
+  --twelve-wide: @twelveWide;
+  --thirteen-wide: @thirteenWide;
+  --fourteen-wide: @fourteenWide;
+  --fifteen-wide: @fifteenWide;
+  --sixteen-wide: @sixteenWide;
+
+  --one-column: @oneColumn;
+  --two-column: @twoColumn;
+  --three-column: @threeColumn;
+  --four-column: @fourColumn;
+  --five-column: @fiveColumn;
+  --six-column: @sixColumn;
+  --seven-column: @sevenColumn;
+  --eight-column: @eightColumn;
+  --nine-column: @nineColumn;
+  --ten-column: @tenColumn;
+  --eleven-column: @elevenColumn;
+  --twelve-column: @twelveColumn;
+  --thirteen-column: @thirteenColumn;
+  --fourteen-column: @fourteenColumn;
+  --fifteen-column: @fifteenColumn;
+  --sixteen-column: @sixteenColumn;
+
+
+  /*******************************
+               States
+  *******************************/
+
+  /*-------------------
+        Disabled
+   --------------------*/
+
+  --disabled-opacity: @disabledOpacity;
+  --disabled-text-color: @disabledTextColor;
+  --inverted-disabled-text-color: @invertedDisabledTextColor;
+
+  /*-------------------
+          Hover
+   --------------------*/
+
+  /*---  Shadows  ---*/
+  --floating-shadow-hover:
+    0px 2px 4px 0px rgba(34, 36, 38, 0.15),
+    0px 2px 10px 0px rgba(34, 36, 38, 0.25)
+  ;
+
+  /*---  Colors  ---*/
+  --primary-color-hover: @primaryColorHover;
+  --secondary-color-hover: @secondaryColorHover;
+
+  --red-hover: @redHover;
+  --orange-hover: @orangeHover;
+  --yellow-hover: @yellowHover;
+  --olive-hover: @oliveHover;
+  --green-hover: @greenHover;
+  --teal-hover: @tealHover;
+  --blue-hover: @blueHover;
+  --violet-hover: @violetHover;
+  --purple-hover: @purpleHover;
+  --pink-hover: @pinkHover;
+  --brown-hover: @brownHover;
+
+  --light-red-hover: @lightRedHover;
+  --light-orange-hover: @lightOrangeHover;
+  --light-yellow-hover: @lightYellowHover;
+  --light-olive-hover: @lightOliveHover;
+  --light-green-hover: @lightGreenHover;
+  --light-teal-hover: @lightTealHover;
+  --light-blue-hover: @lightBlueHover;
+  --light-violet-hover: @lightVioletHover;
+  --light-purple-hover: @lightPurpleHover;
+  --light-pink-hover: @lightPinkHover;
+  --light-brown-hover: @lightBrownHover;
+  --light-grey-hover: @lightGreyHover;
+  --light-black-hover: @lightBlackHover;
+
+  /*---  Emotive  ---*/
+  --positive-color-hover: @positiveColorHover;
+  --negative-color-hover: @negativeColorHover;
+
+  /*---  Brand   ---*/
+  --facebook-hover-color: @facebookHoverColor;
+  --twitter-hover-color: @twitterHoverColor;
+  --google-plus-hover-color: @googlePlusHoverColor;
+  --linked-in-hover-color: @linkedInHoverColor;
+  --youtube-hover-color: @youtubeHoverColor;
+  --instagram-hover-color: @instagramHoverColor;
+  --pinterest-hover-color: @pinterestHoverColor;
+  --vk-hover-color: @vkHoverColor;
+
+  /*---  Dark Tones  ---*/
+  --full-black-hover: @fullBlackHover;
+  --black-hover: @blackHover;
+  --grey-hover: @greyHover;
+
+  /*---  Light Tones  ---*/
+  --white-hover: @whiteHover;
+  --off-white-hover: @offWhiteHover;
+  --dark-white-hover: @darkWhiteHover;
+
+  /*-------------------
+          Focus
+   --------------------*/
+
+  /*---  Colors  ---*/
+  --primary-color-focus: @primaryColorFocus;
+  --secondary-color-focus: @secondaryColorFocus;
+
+  --red-focus: @redFocus;
+  --orange-focus: @orangeFocus;
+  --yellow-focus: @yellowFocus;
+  --olive-focus: @oliveFocus;
+  --green-focus: @greenFocus;
+  --teal-focus: @tealFocus;
+  --blue-focus: @blueFocus;
+  --violet-focus: @violetFocus;
+  --purple-focus: @purpleFocus;
+  --pink-focus: @pinkFocus;
+  --brown-focus: @brownFocus;
+
+  --light-red-focus: @lightRedFocus;
+  --light-orange-focus: @lightOrangeFocus;
+  --light-yellow-focus: @lightYellowFocus;
+  --light-olive-focus: @lightOliveFocus;
+  --light-green-focus: @lightGreenFocus;
+  --light-teal-focus: @lightTealFocus;
+  --light-blue-focus: @lightBlueFocus;
+  --light-violet-focus: @lightVioletFocus;
+  --light-purple-focus: @lightPurpleFocus;
+  --light-pink-focus: @lightPinkFocus;
+  --light-brown-focus: @lightBrownFocus;
+  --light-grey-focus: @lightGreyFocus;
+  --light-black-focus: @lightBlackFocus;
+
+  /*---  Emotive  ---*/
+  --positive-color-focus: @positiveColorFocus;
+  --negative-color-focus: @negativeColorFocus;
+
+  /*---  Brand   ---*/
+  --facebook-focus-color: @facebookFocusColor;
+  --twitter-focus-color: @twitterFocusColor;
+  --google-plus-focus-color: @googlePlusFocusColor;
+  --linked-in-focus-color: @linkedInFocusColor;
+  --youtube-focus-color: @youtubeFocusColor;
+  --instagram-focus-color: @instagramFocusColor;
+  --pinterest-focus-color: @pinterestFocusColor;
+  --vk-focus-color: @vkFocusColor;
+
+  /*---  Dark Tones  ---*/
+  --full-black-focus: @fullBlackFocus;
+  --black-focus: @blackFocus;
+  --grey-focus: @greyFocus;
+
+  /*---  Light Tones  ---*/
+  --white-focus: @whiteFocus;
+  --off-white-focus: @offWhiteFocus;
+  --dark-white-focus: @darkWhiteFocus;
+
+
+  /*-------------------
+      Down (:active)
+   --------------------*/
+
+  /*---  Colors  ---*/
+  --primary-color-down: @primaryColorDown;
+  --secondary-color-down: @secondaryColorDown;
+
+  --red-down: @redDown;
+  --orange-down: @orangeDown;
+  --yellow-down: @yellowDown;
+  --olive-down: @oliveDown;
+  --green-down: @greenDown;
+  --teal-down: @tealDown;
+  --blue-down: @blueDown;
+  --violet-down: @violetDown;
+  --purple-down: @purpleDown;
+  --pink-down: @pinkDown;
+  --brown-down: @brownDown;
+
+  --light-red-down: @lightRedDown;
+  --light-orange-down: @lightOrangeDown;
+  --light-yellow-down: @lightYellowDown;
+  --light-olive-down: @lightOliveDown;
+  --light-green-down: @lightGreenDown;
+  --light-teal-down: @lightTealDown;
+  --light-blue-down: @lightBlueDown;
+  --light-violet-down: @lightVioletDown;
+  --light-purple-down: @lightPurpleDown;
+  --light-pink-down: @lightPinkDown;
+  --light-brown-down: @lightBrownDown;
+  --light-grey-down: @lightGreyDown;
+  --light-black-down: @lightBlackDown;
+
+  /*---  Emotive  ---*/
+  --positive-color-down: @positiveColorDown;
+  --negative-color-down: @negativeColorDown;
+
+  /*---  Brand   ---*/
+  --facebook-down-color: @facebookDownColor;
+  --twitter-down-color: @twitterDownColor;
+  --google-plus-down-color: @googlePlusDownColor;
+  --linked-in-down-color: @linkedInDownColor;
+  --youtube-down-color: @youtubeDownColor;
+  --instagram-down-color: @instagramDownColor;
+  --pinterest-down-color: @pinterestDownColor;
+  --vk-down-color: @vkDownColor;
+
+  /*---  Dark Tones  ---*/
+  --full-black-down: @fullBlackDown;
+  --black-down: @blackDown;
+  --grey-down: @greyDown;
+
+  /*---  Light Tones  ---*/
+  --white-down: @whiteDown;
+  --off-white-down: @offWhiteDown;
+  --dark-white-down: @darkWhiteDown;
+
+
+  /*-------------------
+          Active
+   --------------------*/
+
+  /*---  Colors  ---*/
+  --primary-color-active: @primaryColorActive;
+  --secondary-color-active: @secondaryColorActive;
+
+  --red-active: @redActive;
+  --orange-active: @orangeActive;
+  --yellow-active: @yellowActive;
+  --olive-active: @oliveActive;
+  --green-active: @greenActive;
+  --teal-active: @tealActive;
+  --blue-active: @blueActive;
+  --violet-active: @violetActive;
+  --purple-active: @purpleActive;
+  --pink-active: @pinkActive;
+  --brown-active: @brownActive;
+
+  --light-red-active: @lightRedActive;
+  --light-orange-active: @lightOrangeActive;
+  --light-yellow-active: @lightYellowActive;
+  --light-olive-active: @lightOliveActive;
+  --light-green-active: @lightGreenActive;
+  --light-teal-active: @lightTealActive;
+  --light-blue-active: @lightBlueActive;
+  --light-violet-active: @lightVioletActive;
+  --light-purple-active: @lightPurpleActive;
+  --light-pink-active: @lightPinkActive;
+  --light-brown-active: @lightBrownActive;
+  --light-grey-active: @lightGreyActive;
+  --light-black-active: @lightBlackActive;
+
+  /*---  Emotive  ---*/
+  --positive-color-active: @positiveColorActive;
+  --negative-color-active: @negativeColorActive;
+
+  /*---  Brand   ---*/
+  --facebook-active-color: @facebookActiveColor;
+  --twitter-active-color: @twitterActiveColor;
+  --google-plus-active-color: @googlePlusActiveColor;
+  --linked-in-active-color: @linkedInActiveColor;
+  --youtube-active-color: @youtubeActiveColor;
+  --instagram-active-color: @instagramActiveColor;
+  --pinterest-active-color: @pinterestActiveColor;
+  --vk-active-color: @vkActiveColor;
+
+  /*---  Dark Tones  ---*/
+  --full-black-active: @fullBlackActive;
+  --black-active: @blackActive;
+  --grey-active: @greyActive;
+
+  /*---  Light Tones  ---*/
+  --white-active: @whiteActive;
+  --off-white-active: @offWhiteActive;
+  --dark-white-active: darken(@darkWhite, 5);
+
+  /*-------------------
+        Side Bar
+  --------------------*/
+  --sidebar-background: @sidebarBackground;
+  --sidebar-menu-item-active-background: @sidebarMenuItemActiveBackground;
+  --sidebar-menu-section-color: @sidebarMenuSectionColor;
+  --sidebar-menu-item-color: @sidebarMenuItemColor;
+  --sidebar-menu-action-color: @sidebarMenuActionColor;
+  --sidebar-menu-action-hover-color: @sidebarMenuActionHoverColor;
+  --sidebar-sync-status-view-background: @sidebarSyncStatusViewBackground;
+  --sidebar-sync-status-view-text-color: @sidebarSyncStatusViewTextColor;
+  --sidebar-sync-status-view-detail-color: @sidebarSyncStatusViewDetailColor;
+
+  /*-------------------
+        Scroll Bar
+  --------------------*/
+  --scrollbar-track-background: @scrollbarTrackBackground;
+  --scrollbar-thumb-background: @scrollbarThumbBackground;
+
+  /*-------------------
+        Note List Bar
+  --------------------*/
+  --note-list-bar-background: @noteListBarBackground;
+  --note-list-view-item-color: @noteListViewItemColor;
+  --note-list-view-item-separator-border: @noteListViewItemSeparatorBorder;
+  --note-list-view-item-date-color: @noteListViewItemDateColor;
+  --note-list-view-item-tag-color: @noteListViewItemTagColor;
+  --note-list-view-item-active-background: @noteListViewItemActiveBackground;
+  --note-list-view-item-active-color: @noteListViewItemActiveColor;
+  --note-list-view-item-active-date-color: @noteListViewItemActiveDateColor;
+  --note-list-view-item-active-tag-color: @noteListViewItemActiveTagColor;
+  --note-list-view-item-focus-inner-shadow: @noteListViewItemFocusInnerShadow;
+  --note-search-bar-border-bottom: @noteSearchBarBorderBottom;
+
+  /*-------------------
+        Header Note Menu
+  --------------------*/
+  --header-note-menu-background: @headerNoteMenuBackground;
+  --header-note-menu-color: @headerNoteMenuColor;
+  --header-note-menu-action-item-separator-border: @headerNoteMenuActionItemSeparatorBorder;
+  --header-note-menu-encrypt-button-color: @headerNoteMenuEncryptButtonColor;
+  --header-note-menu-encrypt-button-background: @headerNoteMenuEncryptButtonBackground;
+
+  /*-------------------
+        Preferences
+  --------------------*/
+  --preferences-sidebar-background: @preferencesSidebarBackground;
+  --preferences-sidebar-item-active-background: @preferencesSidebarItemActiveBackground;
+  --preferences-view-background: @preferencesViewBackground;
+
+  /*-------------------
+        Task Icons
+  --------------------*/
+  --task-icon-active: @taskIconActive;
+  --task-icon-onhold: @taskIconOnHold;
+  --task-icon-completed: @taskIconCompleted;
+  --task-icon-dropped: @taskIconDropped;
+
+  /*-------------------
+    Task Progress View
+  --------------------*/
+  --task-progress-view-background-color: @taskProgressViewBackgroundColor;
+  --task-progress-view-foreground-color: @taskProgressViewForegroundColor;
+  --task-progress-view-completed-color: @taskProgressViewCompletedColor;
+}

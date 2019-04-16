@@ -1,13 +1,3 @@
 /*******************************
     User Variable Overrides
 *******************************/
-
-@backgroundColor: #4B5257;
-@textColor: #DDDDDD;
-@hoverBackgroundColor: #34393D;
-@downBackgroundColor: #26292C;
-@activeBackgroundColor: #26292C;
-
-@basicBoxShadow: 0px 0px 0px @basicBorderSize rgba(255, 255, 255, 0.2) inset;
-@basicDownBackground: rgba(255, 255, 255, 0.2);
-@basicHoverBackground: rgba(255, 255, 255, 0.2);

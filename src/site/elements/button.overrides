@@ -1,21 +1,3 @@
 /*******************************
          Site Overrides
 *******************************/
-
-/* Standard Basic Inverted */
-.ui.basic.inverted.buttons .button,
-.ui.basic.inverted.button {
-  color: @textColor !important;
-}
-.ui.basic.inverted.buttons .button:hover,
-.ui.basic.inverted.button:hover {
-  color: @fullBlack !important;
-}
-.ui.basic.inverted.buttons .button:focus,
-.ui.basic.inverted.button:focus {
-  color: @fullBlack !important;
-}
-.ui.basic.inverted.buttons .button:active,
-.ui.basic.inverted.button:active {
-  color: @fullBlack !important;
-}

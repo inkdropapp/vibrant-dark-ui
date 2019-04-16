@@ -156,7 +156,7 @@ module.exports = function(callback) {
       if(version) {
         releaseOptions.target_commitish = version;
       }
-      github.releases.createRelease(releaseOptions, function() {
+      github.repos.createRelease(releaseOptions, function() {
         nextRepo();
       });
     }
@@ -166,7 +166,7 @@ module.exports = function(callback) {
       console.log('Sleeping for 1 second...');
       // avoid rate throttling
       global.clearTimeout(timer);
-      timer = global.setTimeout(stepRepo, 1000);
+      timer = global.setTimeout(stepRepo, 100);
     }
 
 

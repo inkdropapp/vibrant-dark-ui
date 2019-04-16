@@ -46,7 +46,6 @@ module.exports = {
     // global
     'reset',
     'site',
-    'variables',
 
     // elements
     'button',
@@ -60,6 +59,7 @@ module.exports = {
     'label',
     'list',
     'loader',
+    'placeholder',
     'rail',
     'reveal',
     'segment',

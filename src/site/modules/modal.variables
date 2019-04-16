@@ -1,11 +1,3 @@
 /*******************************
          Site Overrides
 *******************************/
-
-@background: @offWhite;
-@headerBackground: @offWhite;
-@contentBackground: @white;
-@actionBackground: @offWhite;
-
-@basicModalHeaderColor: @textColor;
-@basicModalColor: @textColor;

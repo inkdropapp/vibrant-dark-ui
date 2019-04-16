@@ -81,12 +81,7 @@ module.exports = {
     config.paths.output = outputPaths;
 
     // resolve "clean" command path
-    if (typeof config.paths.clean === 'string') {
-      config.paths.clean = [config.paths.clean];
-    }
-    config.paths.clean = config.paths.clean.map(function (p) {
-      return path.resolve( path.join(configPath, config.base, p) );
-    });
+    config.paths.clean = path.resolve( path.join(configPath, config.base, config.paths.clean) );
 
     /*--------------
         CSS URLs
@@ -97,9 +92,9 @@ module.exports = {
 
     config.paths.assets = {
       source       : '../../themes', // source asset path is always the same
-      uncompressed : '.' + path.sep + path.relative(config.paths.output.uncompressed, config.paths.output.themes).replace(/\\/g, '/'),
-      compressed   : '.' + path.sep + path.relative(config.paths.output.compressed, config.paths.output.themes).replace(/\\/g, '/'),
-      packaged     : '.' + path.sep + path.relative(config.paths.output.packaged, config.paths.output.themes).replace(/\\/g, '/')
+      uncompressed : './' + path.relative(config.paths.output.uncompressed, config.paths.output.themes).replace(/\\/g, '/'),
+      compressed   : './' + path.relative(config.paths.output.compressed, config.paths.output.themes).replace(/\\/g, '/'),
+      packaged     : './' + path.relative(config.paths.output.packaged, config.paths.output.themes).replace(/\\/g, '/')
     };
 
     /*--------------

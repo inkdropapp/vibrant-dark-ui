@@ -1,3 +1,0 @@
-.page-preferences {
-  --page-background: @pageBackground;
-}
