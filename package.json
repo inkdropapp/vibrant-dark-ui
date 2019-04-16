@@ -11,7 +11,7 @@
     "inkdrop": "^4.x"
   },
   "scripts": {
-    "run": "gulp",
+    "dev": "gulp",
     "build": "gulp build"
   },
   "repository": "https://github.com/inkdropapp/vibrant-dark-ui",

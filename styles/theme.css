@@ -1554,6 +1554,15 @@ input::selection {
   --task-progress-view-foreground-color: rgba(255, 255, 255, 0.6);
   --task-progress-view-completed-color: #32cd32;
 }
+
+/*********************************
+ * CodeMirror
+ ********************************/
+
+.editor .CodeMirror,
+.editor .CodeMirror .CodeMirror-scroll {
+  background-color: transparent !important;
+}
 /*!
  * # Semantic UI 2.4.2 - Button
  * http://github.com/semantic-org/semantic-ui/

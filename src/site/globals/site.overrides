@@ -1006,3 +1006,12 @@
   --task-progress-view-foreground-color: @taskProgressViewForegroundColor;
   --task-progress-view-completed-color: @taskProgressViewCompletedColor;
 }
+
+/*********************************
+ * CodeMirror
+ ********************************/
+
+.editor .CodeMirror,
+.editor .CodeMirror .CodeMirror-scroll {
+  background-color: transparent !important;
+}
