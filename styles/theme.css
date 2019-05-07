@@ -1525,7 +1525,10 @@ input::selection {
   --note-list-view-item-active-date-color: #DDDDDD;
   --note-list-view-item-active-tag-color: #DDDDDD;
   --note-list-view-item-focus-inner-shadow: inset 0 0 4px rgba(255, 255, 255, 0.4);
+  --note-search-bar-background: transparent;
   --note-search-bar-border-bottom: 1px solid #2E3235;
+  --note-search-bar-input-border: none;
+  --note-search-bar-input-background: rgba(255, 255, 255, 0.05);
   /*-------------------
         Header Note Menu
   --------------------*/

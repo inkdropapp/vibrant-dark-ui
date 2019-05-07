@@ -973,7 +973,10 @@
   --note-list-view-item-active-date-color: @noteListViewItemActiveDateColor;
   --note-list-view-item-active-tag-color: @noteListViewItemActiveTagColor;
   --note-list-view-item-focus-inner-shadow: @noteListViewItemFocusInnerShadow;
+  --note-search-bar-background: @noteSearchBarBackground;
   --note-search-bar-border-bottom: @noteSearchBarBorderBottom;
+  --note-search-bar-input-border: @noteSearchBarInputBorder;
+  --note-search-bar-input-background: @noteSearchBarInputBackground;
 
   /*-------------------
         Header Note Menu
