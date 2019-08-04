@@ -4,7 +4,7 @@
 
  * Note: It works on macOS only.
 
-## Note
+## Compatability
 
 Gulp v3 is incompatible with Node v12. As a result if your Gulp and Node versions are equal to the above mentioned ones, you will be unable to successfully run `npm install`.
 
