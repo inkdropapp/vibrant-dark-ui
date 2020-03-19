@@ -7,9 +7,6 @@
     "theme.css"
   ],
   "description": "A dark UI with vibrant appearance theme",
-  "engines": {
-    "inkdrop": "^4.x"
-  },
   "scripts": {
     "dev": "gulp",
     "build": "gulp build"
@@ -19,5 +16,11 @@
   "license": "MIT",
   "devDependencies": {
     "semantic-ui": "^2.4.2"
+  },
+  "browserslist": [
+    "Electron 7.1.13"
+  ],
+  "engines": {
+    "inkdrop": "^4.x"
   }
 }
