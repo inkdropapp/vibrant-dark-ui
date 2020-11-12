@@ -30,6 +30,12 @@
   content: '\f0d7';
 }
 
+/* Inline dropdown menu */
+.ui.inline.dropdown .menu {
+  background: @inlineMenuBackground;
+  backdrop-filter: blur(10px);
+}
+
 /* Sub Menu */
 .ui.dropdown .menu .item .dropdown.icon:before {
   content: '\f0da'/*rtl:'\f0d9'*/;

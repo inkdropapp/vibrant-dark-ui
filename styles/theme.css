@@ -581,7 +581,7 @@ h5 {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   line-height: 1.28571429em;
   margin: calc(2rem -  0.14285714em ) 0em 1rem;
-  font-weight: bold;
+  font-weight: 600;
   padding: 0em;
 }
 
@@ -738,7 +738,7 @@ input::selection {
   /*--------------
     Page Heading
    ---------------*/
-  --header-font-weight: bold;
+  --header-font-weight: 600;
   --header-line-height: 1.28571429em;
   --h1: 2rem;
   --h2: 1.71428571rem;
@@ -1582,7 +1582,7 @@ input::selection {
   padding: 0.78571429em 1.5em 0.78571429em;
   text-transform: none;
   text-shadow: none;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1em;
   font-style: normal;
   text-align: center;
@@ -2591,7 +2591,7 @@ input::selection {
   line-height: 1.78571429em;
   color: rgba(255, 255, 255, 0.5);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   box-shadow: 0px 0px 0px 1px transparent inset;
 }
 
@@ -5796,7 +5796,7 @@ input::selection {
   margin: 1rem 0rem;
   line-height: 1;
   height: 0em;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: rgba(255, 255, 255, 0.95);
@@ -7337,7 +7337,7 @@ i.flag.zimbabwe:before {
   margin: calc(2rem -  0.14285714em ) 0em 1rem;
   padding: 0em 0em;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.28571429em;
   text-transform: none;
   color: #DDDDDD;
@@ -7548,7 +7548,7 @@ h5.ui.header .sub.header {
 .ui.sub.header {
   padding: 0em;
   margin-bottom: 0.14285714rem;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 0.85714286em;
   text-transform: uppercase;
   color: '';
@@ -15151,7 +15151,7 @@ img.ui.bordered.image {
   padding: 0.5833em 0.833em;
   color: rgba(255, 255, 255, 0.95);
   text-transform: none;
-  font-weight: bold;
+  font-weight: 600;
   border: 0px solid transparent;
   border-radius: 0.28571429rem;
   transition: background 0.1s ease;
@@ -15204,7 +15204,7 @@ a.ui.label {
 .ui.label > .detail {
   display: inline-block;
   vertical-align: top;
-  font-weight: bold;
+  font-weight: 600;
   margin-left: 1em;
   opacity: 0.8;
 }
@@ -16714,7 +16714,7 @@ ol.ui.list ol li,
   display: block;
   margin: 0em;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  font-weight: bold;
+  font-weight: 600;
   color: #DDDDDD;
 }
 
@@ -19691,7 +19691,7 @@ ol.ui.horizontal.list li:before,
 .ui.steps .step .title {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   font-size: 1.14285714em;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .ui.steps .step > .title {
@@ -19768,7 +19768,7 @@ ol.ui.horizontal.list li:before,
   font-size: 2.5em;
   counter-increment: ordered;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .ui.ordered.steps .step > * {
@@ -20290,7 +20290,7 @@ ol.ui.horizontal.list li:before,
 *******************************/
 
 .ui.breadcrumb .active.section {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /*******************************
@@ -20395,7 +20395,7 @@ ol.ui.horizontal.list li:before,
   margin: 0em 0em 0.28571429rem 0em;
   color: #DDDDDD;
   font-size: 0.92857143em;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: none;
 }
 
@@ -21111,7 +21111,7 @@ ol.ui.horizontal.list li:before,
   margin: 0em 0em 0.28571429rem 0em;
   color: #DDDDDD;
   font-size: 0.92857143em;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: none;
 }
 
@@ -21367,7 +21367,7 @@ ol.ui.horizontal.list li:before,
   margin-bottom: 0em;
   vertical-align: baseline;
   font-size: 0.92857143em;
-  font-weight: bold;
+  font-weight: 600;
   color: #DDDDDD;
   text-transform: none;
 }
@@ -23838,13 +23838,13 @@ ol.ui.horizontal.list li:before,
   margin: 0em;
   background: '';
   text-transform: normal;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .ui.vertical.menu .item > .header:not(.ui) {
   margin: 0em 0em 0.5em;
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /*--------------
@@ -23897,7 +23897,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.menu .ui.dropdown .menu > .active.item {
   background: rgba(255, 255, 255, 0.03) !important;
-  font-weight: bold !important;
+  font-weight: 600 !important;
   color: rgba(255, 255, 255, 0.95) !important;
 }
 
@@ -24162,7 +24162,7 @@ Floated Menu / Item
 .ui.vertical.menu {
   display: block;
   flex-direction: column;
-  background: #2E3235;
+  background: rgba(46, 50, 53, 0.7);
   box-shadow: 0px 1px 2px 0 rgba(24, 26, 28, 0.45);
 }
 
@@ -24267,7 +24267,7 @@ Floated Menu / Item
 
 .ui.vertical.menu .item .menu .active.item {
   background-color: transparent;
-  font-weight: bold;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.95);
 }
 
@@ -24315,7 +24315,7 @@ Floated Menu / Item
   color: rgba(255, 255, 255, 0.95);
   border-top-width: 1px;
   border-color: #1B1C1E;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: -1px;
   box-shadow: none;
   border-radius: 0.28571429rem 0.28571429rem 0px 0px !important;
@@ -24670,7 +24670,7 @@ Floated Menu / Item
   background-color: transparent;
   box-shadow: none;
   border-color: #F9FAFB;
-  font-weight: bold;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.95);
 }
 
@@ -24782,7 +24782,7 @@ Floated Menu / Item
   color: rgba(255, 255, 255, 0.95);
   font-size: 0.92857143em;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* Image */
@@ -25856,6 +25856,10 @@ Floated Menu / Item
          Theme Overrides
 *******************************/
 
+.ui.vertical.menu {
+  backdrop-filter: blur(10px);
+}
+
 /*******************************
          Site Overrides
 *******************************/
@@ -25903,7 +25907,7 @@ Floated Menu / Item
 .ui.message .header {
   display: block;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  font-weight: bold;
+  font-weight: 600;
   margin: -0.14285714em 0em 0rem 0em;
 }
 
@@ -26454,7 +26458,7 @@ Floated Menu / Item
   padding: 0.92857143em 0.78571429em;
   vertical-align: inherit;
   font-style: none;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: none;
   border-bottom: 1px solid rgba(24, 26, 28, 0.1);
   border-left: none;
@@ -26601,7 +26605,7 @@ Floated Menu / Item
 
   .ui.table:not(.unstackable) th:first-child,
   .ui.table:not(.unstackable) td:first-child {
-    font-weight: bold;
+    font-weight: 600;
   }
 
   /* Definition Table */
@@ -26692,7 +26696,7 @@ Floated Menu / Item
 .ui.definition.table tr td:first-child:not(.ignored),
 .ui.definition.table tr td.definition {
   background: rgba(255, 255, 255, 0.03);
-  font-weight: bold;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.95);
   text-transform: '';
   box-shadow: '';
@@ -27926,7 +27930,7 @@ Floated Menu / Item
   content: 'Ad';
   color: #2E3235;
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .ui.mobile.test.ad:after {
@@ -28115,7 +28119,7 @@ Floated Menu / Item
 
 .ui.cards > .card > .content > .header:not(.ui),
 .ui.card > .content > .header:not(.ui) {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.28571429em;
   margin-top: -0.21425em;
   line-height: 1.28571429em;
@@ -29104,7 +29108,7 @@ a.ui.card:hover,
 .ui.comments .comment .author {
   font-size: 1em;
   color: #DDDDDD;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .ui.comments .comment a.author {
@@ -29401,7 +29405,7 @@ a.ui.card:hover,
 .ui.feed > .event > .content .summary {
   margin: 0em;
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 600;
   color: #DDDDDD;
 }
 
@@ -29422,7 +29426,7 @@ a.ui.card:hover,
 
 .ui.feed > .event > .content .user {
   display: inline-block;
-  font-weight: bold;
+  font-weight: 600;
   margin-right: 0em;
   vertical-align: baseline;
 }
@@ -29711,7 +29715,7 @@ a.ui.card:hover,
   display: inline-block;
   margin: -0.21425em 0em 0em;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  font-weight: bold;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.95);
 }
 
@@ -30171,7 +30175,7 @@ a.ui.card:hover,
 .ui.statistic > .label {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 600;
   color: #DDDDDD;
   text-transform: uppercase;
   text-align: center;
@@ -30214,7 +30218,7 @@ a.ui.card:hover,
 .ui.statistic > .text.value {
   line-height: 1em;
   min-height: 2em;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -30806,7 +30810,7 @@ a.ui.card:hover,
   margin: 0em;
   padding: 0.75em 1em;
   color: rgba(255, 255, 255, 0.4);
-  font-weight: bold;
+  font-weight: 600;
   border-top: 1px solid rgba(24, 26, 28, 0.45);
   transition: background 0.1s ease, color 0.1s ease;
 }
@@ -31944,7 +31948,7 @@ body.dimmable > .dimmer {
   padding: 0em 1.14285714rem;
   color: rgba(255, 255, 255, 0.95);
   font-size: 0.78571429em;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -32554,7 +32558,7 @@ select.ui.dropdown {
 }
 
 .ui.inline.dropdown > .text {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .ui.inline.dropdown .menu {
@@ -32575,7 +32579,7 @@ select.ui.dropdown {
 
 .ui.dropdown .menu .active.item {
   background: transparent;
-  font-weight: bold;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.95);
   box-shadow: none;
   z-index: 12;
@@ -33337,6 +33341,13 @@ select.ui.dropdown {
   content: '\f0d7';
 }
 
+/* Inline dropdown menu */
+
+.ui.inline.dropdown .menu {
+  background: rgba(46, 50, 53, 0.7);
+  backdrop-filter: blur(10px);
+}
+
 /* Sub Menu */
 
 .ui.dropdown .menu .item .dropdown.icon:before {
@@ -33613,7 +33624,7 @@ select.ui.dropdown {
 .ui.modal > .header:not(.ui) {
   font-size: 1.42857143rem;
   line-height: 1.28571429em;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /*--------------
@@ -34360,7 +34371,7 @@ a.ui.nag {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   font-size: 1.14285714em;
   line-height: 1.2;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .ui.popup > .header + .content {
@@ -35160,7 +35171,7 @@ a.ui.nag {
   color: rgba(0, 0, 0, 0.7);
   text-shadow: none;
   margin-top: -0.5em;
-  font-weight: bold;
+  font-weight: 600;
   text-align: left;
 }
 
@@ -35175,7 +35186,7 @@ a.ui.nag {
   left: 0%;
   bottom: auto;
   color: #DDDDDD;
-  font-weight: bold;
+  font-weight: 600;
   text-shadow: none;
   margin-top: 0.2em;
   text-align: center;
@@ -36053,7 +36064,7 @@ a.ui.nag {
 .ui.search > .results .result .title {
   margin: -0.14285714em 0em 0em;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1em;
   color: rgba(255, 255, 255, 0.95);
 }
@@ -36080,7 +36091,7 @@ a.ui.nag {
 .ui.search > .results > .message .header {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   color: #DDDDDD;
 }
 
@@ -36098,7 +36109,7 @@ a.ui.nag {
   background: #4B5257;
   padding: 0.92857143em 1em;
   color: #DDDDDD;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -36291,7 +36302,7 @@ a.ui.nag {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   font-size: 1em;
   padding: 0.4em 1em;
-  font-weight: bold;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(24, 26, 28, 0.1);
 }

@@ -32,6 +32,8 @@
 @menuTop: 100%;
 @menuTextAlign: left;
 
+@inlineMenuBackground: fade(@white, 70%);
+
 @menuBorderWidth: 1px;
 @menuBorderColor: @borderColor;
 @menuBorder: @menuBorderWidth solid @menuBorderColor;
