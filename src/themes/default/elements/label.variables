@@ -145,6 +145,9 @@
 
 
 /* Colors */
+@fullWhite            : #1E2225;
+@fullWhiteHover       : #000000;
+
 @redTextColor: @black;
 @orangeTextColor: @black;
 @yellowTextColor: @black;
