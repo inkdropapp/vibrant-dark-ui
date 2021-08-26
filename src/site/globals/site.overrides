@@ -953,10 +953,14 @@
   --sidebar-sync-status-view-background: @sidebarSyncStatusViewBackground;
   --sidebar-sync-status-view-text-color: @sidebarSyncStatusViewTextColor;
   --sidebar-sync-status-view-detail-color: @sidebarSyncStatusViewDetailColor;
+  --sidebar-scrollbar-width: @sidebarScrollbarWidth;
+  --sidebar-scrollbar-track-background: @sidebarScrollbarTrackBackground;
+  --sidebar-scrollbar-thumb-background: @sidebarScrollbarThumbBackground;
 
   /*-------------------
         Scroll Bar
   --------------------*/
+  --scrollbar-width: @scrollbarWidth;
   --scrollbar-track-background: @scrollbarTrackBackground;
   --scrollbar-thumb-background: @scrollbarThumbBackground;
 

@@ -25,12 +25,16 @@
 @sidebarSyncStatusViewBackground: transparent;
 @sidebarSyncStatusViewTextColor: @textColor;
 @sidebarSyncStatusViewDetailColor: @lightTextColor;
+@sidebarScrollbarWidth: 6px;
+@sidebarScrollbarTrackBackground: rgba(0,0,0,0.02);
+@sidebarScrollbarThumbBackground: rgba(255,255,255,0.1);
 
 /*-------------------
       Scroll Bar
 --------------------*/
-@scrollbarTrackBackground: rgba(0,0,0,0.3);
-@scrollbarThumbBackground: rgba(255,255,255,0.4);
+@scrollbarWidth: 6px;
+@scrollbarTrackBackground: rgba(0,0,0,0.02);
+@scrollbarThumbBackground: rgba(255,255,255,0.1);
 
 /*-------------------
       Note List Bar

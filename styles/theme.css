@@ -1064,7 +1064,6 @@ input::selection {
   --loader-offset: -0.64285714em;
   --loader-margin: -0.64285714em 0em 0em -0.64285714em;
   /* Rendered Scrollbar Width */
-  --scrollbar-width: 17px;
   /* Maximum Single Character Glyph Width, aka Capital "W" */
   --glyph-width: 1.1em;
   /* Used to match floats with text */
@@ -1490,11 +1489,15 @@ input::selection {
   --sidebar-sync-status-view-background: transparent;
   --sidebar-sync-status-view-text-color: #DDDDDD;
   --sidebar-sync-status-view-detail-color: rgba(255, 255, 255, 0.5);
+  --sidebar-scrollbar-width: 6px;
+  --sidebar-scrollbar-track-background: rgba(0, 0, 0, 0.02);
+  --sidebar-scrollbar-thumb-background: rgba(255, 255, 255, 0.1);
   /*-------------------
         Scroll Bar
   --------------------*/
-  --scrollbar-track-background: rgba(0, 0, 0, 0.3);
-  --scrollbar-thumb-background: rgba(255, 255, 255, 0.4);
+  --scrollbar-width: 6px;
+  --scrollbar-track-background: rgba(0, 0, 0, 0.02);
+  --scrollbar-thumb-background: rgba(255, 255, 255, 0.1);
   /*-------------------
         Note List Bar
   --------------------*/
@@ -5666,21 +5669,21 @@ input::selection {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ui.container {
-    width: 723px;
+    width: 734px;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
   .ui.grid.container {
-    width: calc( 723px  +  2rem ) !important;
+    width: calc( 734px  +  2rem ) !important;
   }
 
   .ui.relaxed.grid.container {
-    width: calc( 723px  +  3rem ) !important;
+    width: calc( 734px  +  3rem ) !important;
   }
 
   .ui.very.relaxed.grid.container {
-    width: calc( 723px  +  5rem ) !important;
+    width: calc( 734px  +  5rem ) !important;
   }
 }
 
@@ -5688,21 +5691,21 @@ input::selection {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ui.container {
-    width: 933px;
+    width: 944px;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
   .ui.grid.container {
-    width: calc( 933px  +  2rem ) !important;
+    width: calc( 944px  +  2rem ) !important;
   }
 
   .ui.relaxed.grid.container {
-    width: calc( 933px  +  3rem ) !important;
+    width: calc( 944px  +  3rem ) !important;
   }
 
   .ui.very.relaxed.grid.container {
-    width: calc( 933px  +  5rem ) !important;
+    width: calc( 944px  +  5rem ) !important;
   }
 }
 
@@ -5710,21 +5713,21 @@ input::selection {
 
 @media only screen and (min-width: 1200px) {
   .ui.container {
-    width: 1127px;
+    width: 1138px;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
   .ui.grid.container {
-    width: calc( 1127px  +  2rem ) !important;
+    width: calc( 1138px  +  2rem ) !important;
   }
 
   .ui.relaxed.grid.container {
-    width: calc( 1127px  +  3rem ) !important;
+    width: calc( 1138px  +  3rem ) !important;
   }
 
   .ui.very.relaxed.grid.container {
-    width: calc( 1127px  +  5rem ) !important;
+    width: calc( 1138px  +  5rem ) !important;
   }
 }
 
@@ -32968,7 +32971,7 @@ select.ui.dropdown {
 @media all and (-ms-high-contrast: none) {
   .ui.scrolling.dropdown .menu,
   .ui.dropdown .scrolling.menu {
-    min-width: calc(100% - 17px);
+    min-width: calc(100% - 6px);
   }
 }
 
