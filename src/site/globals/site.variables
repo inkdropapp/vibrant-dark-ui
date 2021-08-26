@@ -7,8 +7,8 @@
 @importGoogleFonts : false;
 @useCustomScrollbars: false;
 
-@primaryColor: #C06D36;
-@primaryColorFocus: #C06D36;
+@primaryColor: #6987AF;
+@primaryColorFocus: #6987AF;
 @linkHoverColor: @primaryColor;
 
 
@@ -47,7 +47,7 @@
 @noteListViewItemSeparatorBorder: 1px solid @white;
 @noteListViewItemDateColor: @primaryColor;
 @noteListViewItemTagColor: @primaryColor;
-@noteListViewItemActiveBackground: @primaryColor;
+@noteListViewItemActiveBackground: #6987AF80;
 @noteListViewItemActiveColor: @textColor;
 @noteListViewItemActiveDateColor: @textColor;
 @noteListViewItemActiveTagColor: @textColor;
