@@ -14,7 +14,7 @@ ipm install vibrant-dark-ui
 
 ```
 npm install
-gulp build
+npm build
 ```
 
 ## Changelog

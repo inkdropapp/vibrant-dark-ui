@@ -1,9 +1,21 @@
 var
+  browserslist = require('browserslist'),
   console = require('better-console'),
   config  = require('./user'),
   release = require('./project/release')
 ;
 
+var defaultBrowsers = browserslist(browserslist.defaults)
+var userBrowsers = browserslist()
+var hasBrowserslistConfig = JSON.stringify(defaultBrowsers) !== JSON.stringify(userBrowsers)
+
+var overrideBrowserslist = hasBrowserslistConfig ? undefined : [
+  'last 2 versions',
+  '> 1%',
+  'opera 12.1',
+  'bb 10',
+  'android 4'
+]
 
 module.exports = {
 
@@ -20,11 +32,11 @@ module.exports = {
 
   filenames: {
     concatenatedCSS            : 'theme.css',
-    concatenatedJS             : 'semantic.js',
+    concatenatedJS             : 'theme.js',
     concatenatedMinifiedCSS    : 'theme.min.css',
-    concatenatedMinifiedJS     : 'semantic.min.js',
-    concatenatedRTLCSS         : 'semantic.rtl.css',
-    concatenatedMinifiedRTLCSS : 'semantic.rtl.min.css'
+    concatenatedMinifiedJS     : 'theme.min.js',
+    concatenatedRTLCSS         : 'theme.rtl.css',
+    concatenatedMinifiedRTLCSS : 'theme.rtl.min.css'
   },
 
   regExp: {
@@ -39,7 +51,7 @@ module.exports = {
 
       // add version to first comment
       license: {
-        in  : /(^\/\*[\s\S]+)(# Semantic UI )([\s\S]+?\*\/)/,
+        in  : /(^\/\*[\s\S]+)(# Fomantic-UI )([\s\S]+?\*\/)/,
         out : '$1$2' + release.version + ' $3'
       },
 
@@ -75,6 +87,7 @@ module.exports = {
 
     /* Comment Banners */
     header: {
+      year       : (new Date()).getFullYear(),
       title      : release.title,
       version    : release.version,
       repository : release.repository,
@@ -93,22 +106,23 @@ module.exports = {
             theme,
             element
           ;
-          if(error.filename.match(/theme.less/)) {
-            if(error.line == 5) {
-              element  = regExp.variable.exec(error.message)[1];
-              if(element) {
+          if(error && error.filename && error.filename.match(/theme.less/)) {
+            if (error.line == 9) {
+              element = regExp.variable.exec(error.message)[1];
+              if (element) {
                 console.error('Missing theme.config value for ', element);
               }
               console.error('Most likely new UI was added in an update. You will need to add missing elements from theme.config.example');
-            }
-            if(error.line == 46) {
+            } else if (error.line == 73) {
               element = regExp.element.exec(error.message)[1];
               theme   = regExp.theme.exec(error.message)[1];
               console.error(theme + ' is not an available theme for ' + element);
+            } else {
+              console.error(error);
             }
           }
           else {
-            console.log(error);
+            throw new Error(error);
           }
           this.emit('end');
         }
@@ -116,7 +130,9 @@ module.exports = {
     },
 
     /* What Browsers to Prefix */
-    prefix: {},
+    prefix: {
+      overrideBrowserslist
+    },
 
     /* File Renames */
     rename: {
@@ -128,10 +144,11 @@ module.exports = {
 
     /* Minified CSS Concat */
     minify: {
-      processImport       : false,
-      restructuring       : false,
-      keepSpecialComments : 1,
-      roundingPrecision   : -1,
+      level: {
+        1: {
+          inline          : false
+        }
+      }
     },
 
     /* Minified JS Settings */
@@ -144,10 +161,12 @@ module.exports = {
 
     /* Minified Concat CSS Settings */
     concatMinify: {
-      processImport       : false,
-      restructuring       : false,
-      keepSpecialComments : false,
-      roundingPrecision   : -1,
+      level: {
+        1: {
+          inline          : false,
+          specialComments : false
+        }
+      }
     },
 
     /* Minified Concat JS */

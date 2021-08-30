@@ -30,6 +30,7 @@
   content: '\f0d7';
 }
 
+
 /* Inline dropdown menu */
 .ui.inline.dropdown .menu {
   background: @inlineMenuBackground;

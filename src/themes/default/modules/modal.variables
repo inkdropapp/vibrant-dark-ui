@@ -19,7 +19,7 @@
 
 @closeHitbox: 2.25rem;
 @closeDistance: 0.25rem;
-@closeHitBoxOffset: (@closeHitbox - 1rem) / 2;
+@closeHitBoxOffset: ((@closeHitbox - 1rem) / 2);
 @closePadding: @closeHitBoxOffset 0rem 0rem 0rem;
 @closeTop: -(@closeDistance + @closeHitbox);
 @closeRight: -(@closeDistance + @closeHitbox);
