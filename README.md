@@ -1,14 +1,22 @@
 # Vibrant Dark UI Theme for Inkdrop
 
-![screenshot](https://github.com/inkdropapp/vibrant-dark-ui/blob/master/img/screenshot.png?raw=true)
-
-- Note: It works on macOS only.
-
 ## Install
 
 ```
 ipm install vibrant-dark-ui
 ```
+
+### macOS
+
+![Screenshot on macOS](https://github.com/inkdropapp/vibrant-dark-ui/blob/master/img/screenshot-macos.png?raw=true)
+
+### Windows
+
+![Screenshot on Windows](https://github.com/inkdropapp/vibrant-dark-ui/blob/master/img/screenshot-windows.png?raw=true)
+
+On Windows, you have to enable the experimental feature "Acrylic translucent background" on Preferences.
+
+![Preferences](https://github.com/inkdropapp/vibrant-dark-ui/blob/master/img/windows-preferences.png?raw=true)
 
 ## How to build
 
