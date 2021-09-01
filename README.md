@@ -18,6 +18,10 @@ On Windows, you have to enable the experimental feature "Acrylic translucent bac
 
 ![Preferences](https://github.com/inkdropapp/vibrant-dark-ui/blob/master/img/windows-preferences.png?raw=true)
 
+### Linux
+
+Not supported.
+
 ## How to build
 
 ```
