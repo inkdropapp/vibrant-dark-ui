@@ -1024,6 +1024,7 @@
  ********************************/
 
 .editor .CodeMirror,
-.editor .CodeMirror .CodeMirror-scroll {
+.editor .CodeMirror .CodeMirror-scroll,
+.editor .CodeMirror .CodeMirror-gutters {
   background-color: transparent !important;
 }
