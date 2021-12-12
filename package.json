@@ -49,9 +49,9 @@
     "yamljs": "^0.3.0"
   },
   "browserslist": [
-    "Electron 12.0.4"
+    "Electron 16.0.4"
   ],
   "engines": {
-    "inkdrop": "^5.4.0"
+    "inkdrop": "^5.4.3"
   }
 }

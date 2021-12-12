@@ -6,6 +6,10 @@
 ipm install vibrant-dark-ui
 ```
 
+Go to Preferences → Themes → Enable the experimental feature "Acrylic translucent background".
+
+![Preferences](https://github.com/inkdropapp/vibrant-dark-ui/blob/master/img/windows-preferences.png?raw=true)
+
 ### macOS
 
 ![Screenshot on macOS](https://github.com/inkdropapp/vibrant-dark-ui/blob/master/img/screenshot-macos.png?raw=true)
@@ -13,10 +17,6 @@ ipm install vibrant-dark-ui
 ### Windows
 
 ![Screenshot on Windows](https://github.com/inkdropapp/vibrant-dark-ui/blob/master/img/screenshot-windows.png?raw=true)
-
-On Windows, you have to enable the experimental feature "Acrylic translucent background" on Preferences.
-
-![Preferences](https://github.com/inkdropapp/vibrant-dark-ui/blob/master/img/windows-preferences.png?raw=true)
 
 ### Linux
 
