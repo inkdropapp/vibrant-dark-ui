@@ -52,6 +52,6 @@
     "Electron 16.0.4"
   ],
   "engines": {
-    "inkdrop": "^5.4.3"
+    "inkdrop": "^5.5.0"
   }
 }
