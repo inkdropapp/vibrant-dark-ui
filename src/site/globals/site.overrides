@@ -946,6 +946,7 @@
   --sidebar-background: @sidebarBackground;
   --sidebar-menu-item-active-background: @sidebarMenuItemActiveBackground;
   --sidebar-menu-section-color: @sidebarMenuSectionColor;
+  --sidebar-menu-section-separator-color: @sidebarMenuSectionSeparatorColor;
   --sidebar-menu-item-color: @sidebarMenuItemColor;
   --sidebar-menu-action-color: @sidebarMenuActionColor;
   --sidebar-menu-action-hover-color: @sidebarMenuActionHoverColor;

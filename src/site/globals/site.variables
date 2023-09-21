@@ -18,6 +18,7 @@
 @sidebarBackground     : @pageBackground;
 @sidebarMenuItemActiveBackground: rgba(0, 0, 0, 0.2);
 @sidebarMenuSectionColor: @lightTextColor;
+@sidebarMenuSectionSeparatorColor: rgba(255,255,255,0.1);
 @sidebarMenuItemColor  : @textColor;
 @sidebarMenuActionColor : @lightTextColor;
 @sidebarMenuActionHoverColor : @primaryColorFocus;
