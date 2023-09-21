@@ -16,6 +16,10 @@ Go to Preferences → Themes → Enable the experimental feature "Acrylic transl
 
 ### Windows
 
+> Warning: Not supported in the latest version
+>
+> As of 5.6.0, the acrylic window background no longer works due to a bug in Electron. See [this issue](https://forum.inkdrop.app/t/lag-when-resizing-the-window-with-acrylic-background/4011/).
+
 ![Screenshot on Windows](https://github.com/inkdropapp/vibrant-dark-ui/blob/master/img/screenshot-windows.png?raw=true)
 
 ### Linux
