@@ -1,6 +1,6 @@
 {
   "name": "vibrant-dark-ui",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "theme": "ui",
   "main": "./lib/index",
   "styleSheets": [
