@@ -987,6 +987,11 @@
   --note-search-bar-input-background: @noteSearchBarInputBackground;
 
   /*-------------------
+        Editor
+  --------------------*/
+  --editor-background: @editorBackground;
+
+  /*-------------------
         Header Note Menu
   --------------------*/
   --header-note-menu-background: @headerNoteMenuBackground;
