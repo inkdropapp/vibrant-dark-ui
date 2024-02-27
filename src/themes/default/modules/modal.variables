@@ -26,8 +26,8 @@
 
 /* Header */
 @headerMargin: 0em;
-@headerVerticalPadding: 1.25rem;
-@headerHorizontalPadding: 1.5rem;
+@headerVerticalPadding: 1.0rem;
+@headerHorizontalPadding: 1.20rem;
 @headerPadding: @headerVerticalPadding @headerHorizontalPadding;
 @headerBackground: @white;
 @headerColor: @darkTextColor;
@@ -39,7 +39,7 @@
 
 /* Content */
 @contentFontSize: 1em;
-@contentPadding: 1.5rem;
+@contentPadding: 1.0rem;
 @contentLineHeight: 1.4;
 @contentBackground: @white;
 
