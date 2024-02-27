@@ -37,7 +37,9 @@
 @inputColor: @textColor;
 @inputTransition:
   color @defaultDuration @defaultEasing,
-  border-color @defaultDuration @defaultEasing
+  border-color @defaultDuration @defaultEasing,
+  outline-offset @defaultDuration @defaultEasing,
+  outline-color @defaultDuration @defaultEasing
 ;
 @inputBoxShadow: 0em 0em 0em 0em transparent inset;
 

@@ -113,7 +113,10 @@
 .ui.form input[type="url"] {
   font-family: @inputFont;
   margin: 0em;
-  outline: none;
+  outline-offset: var(--unfocused-outline-offset);
+  outline-width: var(--focused-outline-width);
+  outline-color: var(--unfocused-outline-color);
+  outline-style: var(--focused-outline-style);
   -webkit-appearance: none;
   tap-highlight-color:  rgba(255, 255, 255, 0);
 
@@ -127,6 +130,11 @@
   border-radius: @inputBorderRadius;
   box-shadow: @inputBoxShadow;
   transition: @inputTransition;
+
+  &:focus {
+    outline-offset: var(--focused-outline-offset);
+    outline-color: var(--focused-outline-color);
+  }
 }
 
 /* Text Area */
@@ -139,7 +147,10 @@
   font-size: @textAreaFontSize;
   background: @textAreaBackground;
   border: @textAreaBorder;
-  outline: none;
+  outline-offset: var(--unfocused-outline-offset);
+  outline-width: var(--focused-outline-width);
+  outline-color: var(--unfocused-outline-color);
+  outline-style: var(--focused-outline-style);
   color: @inputColor;
   border-radius: @inputBorderRadius;
   box-shadow: @inputBoxShadow;
@@ -147,6 +158,11 @@
   font-size: @textAreaFontSize;
   line-height: @textAreaLineHeight;
   resize: @textAreaResize;
+
+  &:focus {
+    outline-offset: var(--focused-outline-offset);
+    outline-color: var(--focused-outline-color);
+  }
 }
 .ui.form textarea:not([rows]) {
   height: @textAreaHeight;
