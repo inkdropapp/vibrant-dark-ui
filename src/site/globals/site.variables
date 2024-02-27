@@ -55,7 +55,7 @@
 @noteListViewItemFocusInnerShadow: inset 0 0 4px rgba(255,255,255,0.4);
 @noteSearchBarBackground: transparent;
 @noteSearchBarBorderBottom: 1px solid @white;
-@noteSearchBarInputBorder: none;
+@noteSearchBarInputBorder: 1px solid transparent;
 @noteSearchBarInputBackground: rgba(255,255,255,0.05);
 
 /*-------------------
