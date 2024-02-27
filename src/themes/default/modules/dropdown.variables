@@ -9,8 +9,8 @@
 @transition:
   box-shadow @defaultDuration @defaultEasing,
   width @defaultDuration @defaultEasing,
-  outline-offset @defaultDuration ease,
-  outline-color @defaultDuration ease
+  outline-offset @defaultDuration @defaultEasing,
+  outline-color @defaultDuration @defaultEasing
 ;
 @borderRadius: @defaultBorderRadius;
 

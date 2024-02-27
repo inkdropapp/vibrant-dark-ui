@@ -62,7 +62,9 @@
   background-color @defaultDuration @defaultEasing,
   color @defaultDuration @defaultEasing,
   box-shadow @defaultDuration @defaultEasing,
-  background @defaultDuration @defaultEasing
+  background @defaultDuration @defaultEasing,
+  outline-offset @defaultDuration @defaultEasing,
+  outline-color @defaultDuration @defaultEasing
 ;
 /*
 @willChange: box-shadow, transform, opacity, color, background;

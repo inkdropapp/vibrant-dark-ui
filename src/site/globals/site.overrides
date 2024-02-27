@@ -99,6 +99,13 @@
   /* Used on dropdowns, other larger blocks */
   --focused-form-muted-border-color: @focusedFormMutedBorderColor;
 
+  --unfocused-outline-color: @unfocusedOutlineColor;
+  --unfocused-outline-offset: @unfocusedOutlineOffset;
+  --focused-outline-style: @focusedOutlineStyle;
+  --focused-outline-width: @focusedOutlineWidth;
+  --focused-outline-color: @focusedOutlineColor;
+  --focused-outline-offset: @focusedOutlineOffset;
+
   /*-------------------
           Sizes
    --------------------*/
