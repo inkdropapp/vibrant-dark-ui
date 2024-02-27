@@ -27,7 +27,10 @@
 
   min-height: 1em;
 
-  outline: @focusedOutlineWidth @focusedOutlineStyle @unfocusedOutlineColor;
+  outline-offset: var(--unfocused-outline-offset);
+  outline-width: var(--focused-outline-width);
+  outline-color: var(--unfocused-outline-color);
+  outline-style: var(--focused-outline-style);
   border: none;
   vertical-align: @verticalAlign;
   background: @background;
@@ -85,6 +88,8 @@
   color: @focusColor;
   background-image: @focusBackgroundImage !important;
   box-shadow: @focusBoxShadow !important;
+  outline-offset: var(--focused-outline-offset);
+  outline-color: var(--focused-outline-color);
 }
 
 .ui.button:focus .icon {
