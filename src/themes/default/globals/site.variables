@@ -183,12 +183,11 @@
   Highlighted Text
 --------------------*/
 
-@highlightBackground      : #FFFFFF - #CCE2FF;
+@highlightBackground      : @primaryColor;
 @highlightColor           : @textColor;
 
-@inputHighlightBackground : #FFFFFF - rgba(100, 100, 100, 0.4);
+@inputHighlightBackground : @blue;
 @inputHighlightColor      : @textColor;
-
 
 /*-------------------
        Loader
