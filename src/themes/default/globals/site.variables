@@ -495,9 +495,9 @@
 @strongSelectedBorderColor : rgba(24, 26, 28, 0.5);
 @disabledBorderColor       : rgba(24, 26, 28, 0.5);
 
-@solidInternalBorderColor  : #333333;
-@solidBorderColor          : #1B1C1E;
-@solidSelectedBorderColor  : #222222;
+@solidInternalBorderColor  : #222222;
+@solidBorderColor          : #3B3C3E;
+@solidSelectedBorderColor  : #4D5B66;
 
 @whiteBorderColor              : rgba(0, 0, 0, 0.1);
 @selectedWhiteBorderColor      : rgba(0, 0, 0, 0.8);
