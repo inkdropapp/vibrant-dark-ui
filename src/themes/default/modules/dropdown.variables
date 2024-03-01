@@ -25,7 +25,10 @@
 @dropdownIconMargin: 0em 0em 0em 1em;
 
 /* Current Text */
-@textTransition: none;
+@textTransition:
+  outline-offset 100ms @defaultEasing,
+  outline-color 100ms @defaultEasing
+;
 
 /* Menu */
 @menuBackground: @white;
