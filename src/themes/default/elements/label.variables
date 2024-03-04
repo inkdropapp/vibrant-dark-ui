@@ -9,8 +9,8 @@
 @verticalAlign: baseline;
 @verticalMargin: 0em;
 @horizontalMargin: @relative2px;
-@backgroundColor: #666E74;
-@color: @darkTextColor;
+@backgroundColor: hsl(var(--hsl-gray-400) / 10%);
+@color: hsl(var(--hsl-gray-400));
 @backgroundImage: none;
 @verticalPadding: 0.5833em; /* medium is not @emSize custom value required */
 @horizontalPadding: 0.833em;

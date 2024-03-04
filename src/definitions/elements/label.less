@@ -29,10 +29,16 @@
 
   margin: @verticalMargin @horizontalMargin;
 
-  background-color: @backgroundColor;
+  --label-border-color: hsl(var(--hsl-slate-400) / 20%);
+  background-color: var(--label-background-color, @backgroundColor);
   background-image: @backgroundImage;
   padding: @verticalPadding @horizontalPadding;
-  color: @color;
+  color: var(--label-text-color, @color);
+  --label-active-background-color: hsl(var(--hsl-slate-400) / 20%);
+  --label-active-border-color: hsl(var(--hsl-slate-400) / 30%);
+  --label-active-text-color: hsl(var(--hsl-slate-300));
+  --label-circular-background-color: hsl(var(--hsl-slate-400) / 30%);
+  --label-circular-border-color: hsl(var(--hsl-slate-400));
 
   text-transform: @textTransform;
   font-weight: @fontWeight;
@@ -481,11 +487,11 @@ a.ui.label:hover:before {
 --------------------*/
 
 .ui.active.label {
-  background-color: @labelActiveBackgroundColor;
-  border-color: @labelActiveBackgroundColor;
+  background-color: var(--label-active-background-color, @labelActiveBackgroundColor);
+  border-color: var(--label-active-border-color, @labelActiveBackgroundColor);
 
   background-image: @labelActiveBackgroundImage;
-  color: @labelActiveTextColor;
+  color: var(--label-active-text-color, @labelActiveTextColor);
 }
 .ui.active.label:before {
   background-color: @labelActiveBackgroundColor;
@@ -544,9 +550,14 @@ a.ui.active.label:ActiveHover:before {
 /*--- Red ---*/
 .ui.red.labels .label,
 .ui.red.label {
-  background-color: @red !important;
-  border-color: @red !important;
-  color: @redTextColor !important;
+  --label-background-color: hsl(var(--hsl-red-400) / 10%);
+  --label-border-color: hsl(var(--hsl-red-400) / 20%);
+  --label-text-color: hsl(var(--hsl-red-400));
+  --label-active-background-color: hsl(var(--hsl-red-400) / 20%);
+  --label-active-border-color: hsl(var(--hsl-red-400) / 30%);
+  --label-active-text-color: hsl(var(--hsl-red-500));
+  --label-circular-background-color: hsl(var(--hsl-red-400) / 30%);
+  --label-circular-border-color: hsl(var(--hsl-red-400));
 }
 /* Link */
 .ui.red.labels .label:hover,
@@ -580,9 +591,14 @@ a.ui.basic.red.label:hover {
 /*--- Orange ---*/
 .ui.orange.labels .label,
 .ui.orange.label {
-  background-color: @orange !important;
-  border-color: @orange !important;
-  color: @orangeTextColor !important;
+  --label-background-color: hsl(var(--hsl-orange-400) / 10%);
+  --label-border-color: hsl(var(--hsl-orange-400) / 20%);
+  --label-text-color: hsl(var(--hsl-orange-400));
+  --label-active-background-color: hsl(var(--hsl-orange-400) / 20%);
+  --label-active-border-color: hsl(var(--hsl-orange-400) / 30%);
+  --label-active-text-color: hsl(var(--hsl-orange-500));
+  --label-circular-background-color: hsl(var(--hsl-orange-400) / 30%);
+  --label-circular-border-color: hsl(var(--hsl-orange-400));
 }
 /* Link */
 .ui.orange.labels .label:hover,
@@ -616,9 +632,14 @@ a.ui.basic.orange.label:hover {
 /*--- Yellow ---*/
 .ui.yellow.labels .label,
 .ui.yellow.label {
-  background-color: @yellow !important;
-  border-color: @yellow !important;
-  color: @yellowTextColor !important;
+  --label-background-color: hsl(var(--hsl-yellow-400) / 10%);
+  --label-border-color: hsl(var(--hsl-yellow-400) / 20%);
+  --label-text-color: hsl(var(--hsl-yellow-400));
+  --label-active-background-color: hsl(var(--hsl-yellow-400) / 20%);
+  --label-active-border-color: hsl(var(--hsl-yellow-400) / 30%);
+  --label-active-text-color: hsl(var(--hsl-yellow-500));
+  --label-circular-background-color: hsl(var(--hsl-yellow-400) / 30%);
+  --label-circular-border-color: hsl(var(--hsl-yellow-400));
 }
 /* Link */
 .ui.yellow.labels .label:hover,
@@ -688,9 +709,14 @@ a.ui.basic.olive.label:hover {
 /*--- Green ---*/
 .ui.green.labels .label,
 .ui.green.label {
-  background-color: @green !important;
-  border-color: @green !important;
-  color: @greenTextColor !important;
+  --label-background-color: hsl(var(--hsl-green-400) / 10%);
+  --label-border-color: hsl(var(--hsl-green-400) / 20%);
+  --label-text-color: hsl(var(--hsl-green-400));
+  --label-active-background-color: hsl(var(--hsl-green-400) / 20%);
+  --label-active-border-color: hsl(var(--hsl-green-400) / 30%);
+  --label-active-text-color: hsl(var(--hsl-green-500));
+  --label-circular-background-color: hsl(var(--hsl-green-400) / 30%);
+  --label-circular-border-color: hsl(var(--hsl-green-400));
 }
 /* Link */
 .ui.green.labels .label:hover,
@@ -724,9 +750,14 @@ a.ui.basic.green.label:hover {
 /*--- Teal ---*/
 .ui.teal.labels .label,
 .ui.teal.label {
-  background-color: @teal !important;
-  border-color: @teal !important;
-  color: @tealTextColor !important;
+  --label-background-color: hsl(var(--hsl-teal-400) / 10%);
+  --label-border-color: hsl(var(--hsl-teal-400) / 20%);
+  --label-text-color: hsl(var(--hsl-teal-400));
+  --label-active-background-color: hsl(var(--hsl-teal-400) / 20%);
+  --label-active-border-color: hsl(var(--hsl-teal-400) / 30%);
+  --label-active-text-color: hsl(var(--hsl-teal-500));
+  --label-circular-background-color: hsl(var(--hsl-teal-400) / 30%);
+  --label-circular-border-color: hsl(var(--hsl-teal-400));
 }
 /* Link */
 .ui.teal.labels .label:hover,
@@ -760,9 +791,14 @@ a.ui.basic.teal.label:hover {
 /*--- Blue ---*/
 .ui.blue.labels .label,
 .ui.blue.label {
-  background-color: @blue !important;
-  border-color: @blue !important;
-  color: @blueTextColor !important;
+  --label-background-color: hsl(var(--hsl-blue-400) / 10%);
+  --label-border-color: hsl(var(--hsl-blue-400) / 20%);
+  --label-text-color: hsl(var(--hsl-blue-400));
+  --label-active-background-color: hsl(var(--hsl-blue-400) / 20%);
+  --label-active-border-color: hsl(var(--hsl-blue-400) / 30%);
+  --label-active-text-color: hsl(var(--hsl-blue-500));
+  --label-circular-background-color: hsl(var(--hsl-blue-400) / 30%);
+  --label-circular-border-color: hsl(var(--hsl-blue-400));
 }
 /* Link */
 .ui.blue.labels .label:hover,
@@ -796,9 +832,14 @@ a.ui.basic.blue.label:hover {
 /*--- Violet ---*/
 .ui.violet.labels .label,
 .ui.violet.label {
-  background-color: @violet !important;
-  border-color: @violet !important;
-  color: @violetTextColor !important;
+  --label-background-color: hsl(var(--hsl-violet-400) / 10%);
+  --label-border-color: hsl(var(--hsl-violet-400) / 20%);
+  --label-text-color: hsl(var(--hsl-violet-400));
+  --label-active-background-color: hsl(var(--hsl-violet-400) / 20%);
+  --label-active-border-color: hsl(var(--hsl-violet-400) / 30%);
+  --label-active-text-color: hsl(var(--hsl-violet-500));
+  --label-circular-background-color: hsl(var(--hsl-violet-400) / 30%);
+  --label-circular-border-color: hsl(var(--hsl-violet-400));
 }
 /* Link */
 .ui.violet.labels .label:hover,
@@ -832,9 +873,14 @@ a.ui.basic.violet.label:hover {
 /*--- Purple ---*/
 .ui.purple.labels .label,
 .ui.purple.label {
-  background-color: @purple !important;
-  border-color: @purple !important;
-  color: @purpleTextColor !important;
+  --label-background-color: hsl(var(--hsl-purple-400) / 10%);
+  --label-border-color: hsl(var(--hsl-purple-400) / 20%);
+  --label-text-color: hsl(var(--hsl-purple-400));
+  --label-active-background-color: hsl(var(--hsl-purple-400) / 20%);
+  --label-active-border-color: hsl(var(--hsl-purple-400) / 30%);
+  --label-active-text-color: hsl(var(--hsl-purple-500));
+  --label-circular-background-color: hsl(var(--hsl-purple-400) / 30%);
+  --label-circular-border-color: hsl(var(--hsl-purple-400));
 }
 /* Link */
 .ui.purple.labels .label:hover,
@@ -868,9 +914,14 @@ a.ui.basic.purple.label:hover {
 /*--- Pink ---*/
 .ui.pink.labels .label,
 .ui.pink.label {
-  background-color: @pink !important;
-  border-color: @pink !important;
-  color: @pinkTextColor !important;
+  --label-background-color: hsl(var(--hsl-pink-400) / 10%);
+  --label-border-color: hsl(var(--hsl-pink-400) / 20%);
+  --label-text-color: hsl(var(--hsl-pink-400));
+  --label-active-background-color: hsl(var(--hsl-pink-400) / 20%);
+  --label-active-border-color: hsl(var(--hsl-pink-400) / 30%);
+  --label-active-text-color: hsl(var(--hsl-pink-500));
+  --label-circular-background-color: hsl(var(--hsl-pink-400) / 30%);
+  --label-circular-border-color: hsl(var(--hsl-pink-400));
 }
 /* Link */
 .ui.pink.labels .label:hover,
@@ -904,9 +955,14 @@ a.ui.basic.pink.label:hover {
 /*--- Brown ---*/
 .ui.brown.labels .label,
 .ui.brown.label {
-  background-color: @brown !important;
-  border-color: @brown !important;
-  color: @brownTextColor !important;
+  --label-background-color: hsl(var(--hsl-amber-800) / 20%);
+  --label-border-color: hsl(var(--hsl-amber-700) / 20%);
+  --label-text-color: hsl(var(--hsl-amber-700));
+  --label-active-background-color: hsl(var(--hsl-amber-800) / 30%);
+  --label-active-border-color: hsl(var(--hsl-amber-700) / 40%);
+  --label-active-text-color: hsl(var(--hsl-amber-600));
+  --label-circular-background-color: hsl(var(--hsl-amber-700) / 30%);
+  --label-circular-border-color: hsl(var(--hsl-amber-700));
 }
 /* Link */
 .ui.brown.labels .label:hover,
@@ -940,9 +996,14 @@ a.ui.basic.brown.label:hover {
 /*--- Grey ---*/
 .ui.grey.labels .label,
 .ui.grey.label {
-  background-color: @grey !important;
-  border-color: @grey !important;
-  color: @greyTextColor !important;
+  --label-background-color: hsl(var(--hsl-gray-500) / 20%);
+  --label-border-color: hsl(var(--hsl-gray-400) / 20%);
+  --label-text-color: hsl(var(--hsl-gray-400));
+  --label-active-background-color: hsl(var(--hsl-gray-400) / 20%);
+  --label-active-border-color: hsl(var(--hsl-gray-400) / 30%);
+  --label-active-text-color: hsl(var(--hsl-gray-300));
+  --label-circular-background-color: hsl(var(--hsl-gray-400) / 30%);
+  --label-circular-border-color: hsl(var(--hsl-gray-400));
 }
 /* Link */
 .ui.grey.labels .label:hover,
@@ -976,9 +1037,14 @@ a.ui.basic.grey.label:hover {
 /*--- Black ---*/
 .ui.black.labels .label,
 .ui.black.label {
-  background-color: @fullWhite !important;
-  border-color: @fullWhite !important;
-  color: @blackTextColor !important;
+  --label-background-color: hsl(var(--hsl-gray-950) / 40%);
+  --label-border-color: hsl(var(--hsl-gray-300) / 30%);
+  --label-text-color: hsl(var(--hsl-gray-400));
+  --label-active-background-color: hsl(var(--hsl-gray-950) / 50%);
+  --label-active-border-color: hsl(var(--hsl-gray-300) / 40%);
+  --label-active-text-color: hsl(var(--hsl-gray-300));
+  --label-circular-background-color: hsl(var(--hsl-gray-950) / 40%);
+  --label-circular-border-color: hsl(var(--hsl-gray-400) / 40%);
 }
 /* Link */
 .ui.black.labels .label:hover,
@@ -1092,6 +1158,9 @@ a.ui.basic.label:hover {
   width: @emptyCircleSize;
   height: @emptyCircleSize;
   vertical-align: baseline;
+  background-color: var(--label-circular-background-color, var(--label-text-color));
+  border-color: var(--label-circular-border-color, var(--label-border-color));
+  border-width: @borderWidth;
 }
 
 /*-------------------
