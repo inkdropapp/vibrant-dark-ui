@@ -11,7 +11,8 @@
       Side Bar
 --------------------*/
 @sidebarBackground     : @pageBackground;
-@sidebarMenuItemActiveBackground: rgba(0, 0, 0, 0.2);
+@sidebarMenuItemActiveBackground: #6987AF60;
+@sidebarMenuItemInactiveBackground: #6987AF30;
 @sidebarMenuSectionColor: @lightTextColor;
 @sidebarMenuSectionSeparatorColor: rgba(255,255,255,0.1);
 @sidebarMenuItemColor  : @textColor;
@@ -43,11 +44,12 @@
 @noteListViewItemSeparatorBorder: 1px solid rgba(255, 255, 255, 0.1);
 @noteListViewItemDateColor: @primaryColor;
 @noteListViewItemTagColor: @primaryColor;
-@noteListViewItemActiveBackground: #6987AF80;
+@noteListViewItemInactiveBackground: #6987AF30;
+@noteListViewItemActiveBackground: #6987AF60;
 @noteListViewItemActiveColor: @textColor;
 @noteListViewItemActiveDateColor: @textColor;
 @noteListViewItemActiveTagColor: @textColor;
-@noteListViewItemFocusInnerShadow: inset 0 0 4px rgba(255,255,255,0.4);
+@noteListViewItemFocusInnerShadow: none;
 @noteSearchBarBackground: transparent;
 @noteSearchBarBorderBottom: 1px solid @white;
 @noteSearchBarInputBorder: 1px solid transparent;
