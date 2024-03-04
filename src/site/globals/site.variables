@@ -79,14 +79,14 @@
 /*-------------------
       Task Icons
 --------------------*/
-@taskIconActive: darkgray;
-@taskIconOnHold: orange;
-@taskIconCompleted: limegreen;
-@taskIconDropped: lightcoral;
+@taskIconActive: hsl(var(--hsl-slate-400));
+@taskIconOnHold: hsl(var(--hsl-amber-500));
+@taskIconCompleted: hsl(var(--hsl-emerald-500));
+@taskIconDropped: hsl(var(--hsl-rose-400));
 
 /*-------------------
   Task Progress View
 --------------------*/
-@taskProgressViewBackgroundColor: rgba(0, 0, 0, 0.3);
-@taskProgressViewForegroundColor: rgba(255, 255, 255, 0.6);
-@taskProgressViewCompletedColor: rgb(50, 205, 50);
+@taskProgressViewBackgroundColor: hsl(var(--hsl-gray-950) / 30%);
+@taskProgressViewForegroundColor: hsl(var(--hsl-gray-50) / 60%);
+@taskProgressViewCompletedColor: hsl(var(--hsl-green-500));
