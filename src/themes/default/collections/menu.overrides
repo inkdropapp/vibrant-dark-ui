@@ -1,7 +1,3 @@
 /*******************************
          Theme Overrides
 *******************************/
-
-.ui.vertical.menu {
-  backdrop-filter: blur(10px);
-}

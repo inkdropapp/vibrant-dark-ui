@@ -34,7 +34,6 @@
 /* Inline dropdown menu */
 .ui.inline.dropdown .menu {
   background: @inlineMenuBackground;
-  backdrop-filter: blur(10px);
 }
 
 /* Sub Menu */
