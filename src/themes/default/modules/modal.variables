@@ -31,7 +31,7 @@
 @headerPadding: @headerVerticalPadding @headerHorizontalPadding;
 @headerBackground: @white;
 @headerColor: @darkTextColor;
-@headerFontSize: @huge;
+@headerFontSize: 1em;
 @headerBoxShadow: none;
 @headerFontWeight: @bold;
 @headerFontFamily: @headerFont;
