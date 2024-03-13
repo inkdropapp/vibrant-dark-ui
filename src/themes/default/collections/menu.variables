@@ -306,7 +306,7 @@
 
 
 /* Tabular */
-@tabularBorderColor: @solidBorderColor;
+@tabularBorderColor: @borderColor;
 @tabularBackgroundColor: transparent;
 @tabularBackground: none @tabularBackgroundColor;
 @tabularBorderWidth: 1px;
