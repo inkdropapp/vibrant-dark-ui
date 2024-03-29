@@ -673,9 +673,14 @@ a.ui.basic.yellow.label:hover {
 /*--- Olive ---*/
 .ui.olive.labels .label,
 .ui.olive.label {
-  background-color: @olive !important;
-  border-color: @olive !important;
-  color: @oliveTextColor !important;
+  --label-background-color: hsl(var(--hsl-lime-400) / 10%);
+  --label-border-color: hsl(var(--hsl-lime-400) / 20%);
+  --label-text-color: hsl(var(--hsl-lime-400));
+  --label-active-background-color: hsl(var(--hsl-lime-400) / 20%);
+  --label-active-border-color: hsl(var(--hsl-lime-400) / 30%);
+  --label-active-text-color: hsl(var(--hsl-lime-500));
+  --label-circular-background-color: hsl(var(--hsl-lime-400) / 30%);
+  --label-circular-border-color: hsl(var(--hsl-lime-400));
 }
 /* Link */
 .ui.olive.labels .label:hover,
