@@ -49,7 +49,7 @@
     "yamljs": "^0.3.0"
   },
   "browserslist": [
-    "Electron 16.0.4"
+    "Electron 27.0.0"
   ],
   "engines": {
     "inkdrop": "^5.8.0"
