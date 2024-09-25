@@ -41,7 +41,6 @@
     "gulp-rtlcss": "^2.0.0",
     "gulp-tap": "^2.0.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-watch": "^5.0.1",
     "inquirer": "^8.1.2",
     "mkdirp": "^1.0.4",
     "require-dot-file": "^0.4.0",
