@@ -1,5 +1,10 @@
 # Vibrant Dark UI Theme for Inkdrop
 
+> [!IMPORTANT]
+> This theme has been deprecated as of v5.9.0.. Please use the default dark UI theme and enable the acrylic background option in the Preferences.
+> Check out [the release notes for more information](https://forum.inkdrop.app/t/inkdrop-desktop-v5-9-0/5059).
+
+
 ## Install
 
 ```
